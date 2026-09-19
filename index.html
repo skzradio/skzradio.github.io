@@ -1383,8 +1383,10 @@
     let history = [];
     let isPlaying = false;
     let isDragging = false;
+    let playbackDeck = [];
     const coverCache = {};
     const albumCache = {};
+    const albumCoverCache = {};
 
     const audio = document.getElementById("audioSource");
     const playerDeck = document.getElementById("playerDeck");
@@ -1643,54 +1645,87 @@
       }
 
       TRACKS = enrichTracksWithAlbums(TRACKS);
+      playbackDeck = replenishDeck();
       renderCatalog();
     }
     loadCatalog();
 
-    function getRandomTrack() {
-      if (TRACKS.length === 0) return null;
-      let next;
-      do {
-        next = TRACKS[Math.floor(Math.random() * TRACKS.length)];
-      } while (TRACKS.length > 1 && currentTrack && next.id === currentTrack.id);
-      return next;
+    function replenishDeck() {
+      if (TRACKS.length === 0) return [];
+      const deck = [...TRACKS];
+      // Algoritmo Fisher-Yates para barajado real de radio
+      for (let i = deck.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
+      }
+      // Evitar que la primera del nuevo ciclo coincida con la última canción reproducida
+      if (currentTrack && deck.length > 1 && deck[deck.length - 1].id === currentTrack.id) {
+        const swapIdx = Math.floor(Math.random() * (deck.length - 1));
+        [deck[deck.length - 1], deck[swapIdx]] = [deck[swapIdx], deck[deck.length - 1]];
+      }
+      return deck;
     }
 
-    function fetchOfficialCover(songTitle) {
+    function getRandomTrack() {
+      if (TRACKS.length === 0) return null;
+      if (playbackDeck.length === 0) {
+        playbackDeck = replenishDeck();
+      }
+      return playbackDeck.pop();
+    }
+
+    async function fetchOfficialCover(songTitle, albumName) {
       const cleanTitle = songTitle.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+      const cleanAlbum = (albumName || '').replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
       
       if (coverCache[cleanTitle]) {
         coverImg.src = coverCache[cleanTitle];
-        if (albumCache[cleanTitle] && currentTrack) {
-          trackArtist.textContent = `${albumCache[cleanTitle]} • ${currentTrack.artist || 'Stray Kids'}`;
-        }
         return;
       }
+      if (cleanAlbum && albumCoverCache[cleanAlbum.toLowerCase()]) {
+        coverImg.src = albumCoverCache[cleanAlbum.toLowerCase()];
+      }
 
-      const query = encodeURIComponent(`Stray Kids ${cleanTitle}`);
-      fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=1`)
-        .then(res => res.json())
-        .then(data => {
-          if (data.results && data.results.length > 0) {
-            const item = data.results[0];
-            const hiresCover = item.artworkUrl100.replace('100x100bb', '600x600bb');
-            coverCache[cleanTitle] = hiresCover;
-            coverImg.src = hiresCover;
+      try {
+        // Buscar con hasta 8 resultados para filtrar estrictamente que el artista sea Stray Kids
+        const query = encodeURIComponent(`Stray Kids ${cleanTitle}`);
+        const res = await fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=8`);
+        const data = await res.json();
+        
+        let match = (data.results || []).find(r => 
+          (r.artistName || "").toLowerCase().includes("stray kids") &&
+          (r.trackName || "").toLowerCase().includes(cleanTitle.toLowerCase())
+        );
 
-            // Extraer y mostrar el nombre oficial del álbum (ej: ATE, 5-STAR, ROCK-STAR, NOEASY)
-            if (item.collectionName) {
-              albumCache[cleanTitle] = item.collectionName;
-              if (currentTrack && currentTrack.title === songTitle) {
-                trackArtist.textContent = `${item.collectionName} • ${currentTrack.artist || 'Stray Kids'}`;
-              }
-            }
-          } else {
-            coverImg.src = DEFAULT_SVG_COVER;
+        if (!match) {
+          match = (data.results || []).find(r => (r.artistName || "").toLowerCase().includes("stray kids"));
+        }
+
+        // Si la canción es un b-side o solo de Stray Kids, buscar la carátula oficial por nombre de álbum
+        if (!match && cleanAlbum && cleanAlbum !== 'SKZ Collection') {
+          const albumQuery = encodeURIComponent(`Stray Kids ${cleanAlbum}`);
+          const aRes = await fetch(`https://itunes.apple.com/search?term=${albumQuery}&media=music&entity=album&limit=4`);
+          const aData = await aRes.json();
+          match = (aData.results || []).find(r => (r.artistName || "").toLowerCase().includes("stray kids"));
+        }
+
+        if (match && match.artworkUrl100) {
+          const hiresCover = match.artworkUrl100.replace('100x100bb', '600x600bb');
+          coverCache[cleanTitle] = hiresCover;
+          if (cleanAlbum) albumCoverCache[cleanAlbum.toLowerCase()] = hiresCover;
+          coverImg.src = hiresCover;
+
+          if (match.collectionName && (match.artistName || "").toLowerCase().includes("stray kids")) {
+            albumCache[cleanTitle] = match.collectionName;
           }
-        })
-        .catch(() => {
+        } else if (!cleanAlbum || !albumCoverCache[cleanAlbum.toLowerCase()]) {
           coverImg.src = DEFAULT_SVG_COVER;
-        });
+        }
+      } catch (_) {
+        if (!cleanAlbum || !albumCoverCache[cleanAlbum.toLowerCase()]) {
+          coverImg.src = DEFAULT_SVG_COVER;
+        }
+      }
     }
 
     function playTrack(track, isFromQueue = false) {
@@ -1710,9 +1745,9 @@
 
       updateTitleMarquee(track.title);
 
-      // Si ya tenemos el álbum oficial en caché lo usamos; si no, muestra el inicial mientras consulta
+      // El mapa oficial verificado ALBUM_MAP siempre tiene prioridad sobre coincidencias ambiguas externas
       const cleanTitle = track.title.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-      const currentAlbum = albumCache[cleanTitle] || track.album || 'Stray Kids';
+      const currentAlbum = ALBUM_MAP[cleanTitle.toLowerCase()] || track.album || albumCache[cleanTitle] || 'Stray Kids';
       trackArtist.textContent = `${currentAlbum} • ${track.artist || 'Stray Kids'}`;
 
       if (isFromQueue) {
@@ -1723,7 +1758,7 @@
         modeIndicator.style.color = "var(--accent-cyan)";
       }
 
-      fetchOfficialCover(track.title);
+      fetchOfficialCover(track.title, currentAlbum);
 
       audio.play().then(() => {
         setPlaying(true);
@@ -1907,10 +1942,56 @@
       searchField.parentElement.style.display = "none";
     });
 
+    function getSearchScore(track, query) {
+      if (!query) return 1;
+      const q = query.toLowerCase().trim();
+      const title = (track.title || "").toLowerCase().trim();
+      const album = (track.album || "").toLowerCase().trim();
+
+      // Coincidencia exacta
+      if (title === q) return 100;
+
+      // El título comienza por la búsqueda (ej: "my" -> "My Name", "My Pace")
+      if (title.startsWith(q)) {
+        return 80 - Math.min(title.length - q.length, 25);
+      }
+
+      // Una palabra dentro del título comienza por la búsqueda (ej: "Hold My Hand")
+      const words = title.split(/[\s\-_\(\)\/]+/);
+      const wordIndex = words.findIndex(w => w.startsWith(q));
+      if (wordIndex !== -1) {
+        return 60 - Math.min(wordIndex * 3, 20);
+      }
+
+      // Subcadena dentro del título
+      if (title.includes(q)) {
+        return 40 - Math.min(title.indexOf(q), 20);
+      }
+
+      // El álbum comienza por la búsqueda
+      if (album.startsWith(q)) return 25;
+      if (album.includes(q)) return 15;
+
+      return 0;
+    }
+
     function renderCatalog(filter = "") {
       catalogView.innerHTML = "";
       const q = filter.toLowerCase().trim();
-      const filtered = TRACKS.filter(t => t.title.toLowerCase().includes(q) || (t.album && t.album.toLowerCase().includes(q)));
+      
+      let filtered;
+      if (!q) {
+        filtered = [...TRACKS];
+      } else {
+        filtered = TRACKS
+          .map(t => ({ track: t, score: getSearchScore(t, q) }))
+          .filter(item => item.score > 0)
+          .sort((a, b) => {
+            if (b.score !== a.score) return b.score - a.score;
+            return a.track.title.localeCompare(b.track.title);
+          })
+          .map(item => item.track);
+      }
 
       filtered.forEach((t, idx) => {
         const li = document.createElement("li");
