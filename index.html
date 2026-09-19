@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>SKZ RADIO</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23181b28'/%3E%3Cstop offset='100%25' stop-color='%2308090d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)' stroke='%23ff003c' stroke-width='4'/%3E%3Ctext x='32' y='42' font-family='system-ui, -apple-system, sans-serif' font-weight='900' font-size='23' fill='%23ffffff' text-anchor='middle' letter-spacing='1.5'%3ESKZ%3C/text%3E%3Ccircle cx='51' cy='15' r='3.5' fill='%2300f0ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-main: #08090d;
+      --surface-1: rgba(18, 20, 28, 0.92);
+      --surface-2: rgba(28, 32, 45, 0.75);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(255, 0, 60, 0.45);
+      --skz-crimson: #ff003c;
+      --skz-glow: rgba(255, 0, 60, 0.45);
+      --accent-cyan: #00f0ff;
+      --text-primary: #ffffff;
+      --text-secondary: #9499ad;
+      --text-muted: #5a5f73;
+      --app-height: 100dvh;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100%;
+      height: var(--app-height);
+      max-height: var(--app-height);
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow: hidden;
+      position: fixed;
+      inset: 0;
+    }
+
+    body {
+      background-image: 
+        radial-gradient(circle at 15% 0%, rgba(255, 0, 60, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 85% 100%, rgba(0, 240, 255, 0.12) 0%, transparent 45%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-bar {
+      height: 48px;
+      padding: 0 16px;
+      padding-top: env(safe-area-inset-top, 0px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(8, 9, 13, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      flex-shrink: 0;
+      z-index: 50;
+    }
+
+    @media (min-width: 900px) {
+      .header-bar {
+        height: 54px;
+        padding: 0 28px;
+      }
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      filter: drop-shadow(0 0 8px var(--skz-glow));
+      transition: transform 0.2s ease;
+    }
+
+    .brand-logo-icon:hover {
+      transform: scale(1.05);
+    }
+
+    .brand-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    @media (min-width: 900px) {
+      .brand-logo-icon { 
+        width: 32px; 
+        height: 32px; 
+      }
+      .brand-name { 
+        font-size: 18px; 
+      }
+    }
+
+    .live-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface-2);
+      border: 1px solid var(--border-subtle);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--skz-crimson);
+    }
+
+    .pulse-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--skz-crimson);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--skz-crimson);
+      animation: pulse 1.6s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    .workspace {
+      flex: 1;
+      width: 100%;
+      height: calc(var(--app-height) - 48px);
+      min-height: 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    @media (min-width: 900px) {
+      .workspace {
+        display: grid;
+        grid-template-columns: minmax(360px, 460px) 1fr;
+        gap: 20px;
+        padding: 14px 28px 18px 28px;
+        height: calc(100vh - 54px);
+        max-width: 1920px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .workspace {
+        grid-template-columns: 500px 1fr;
+        gap: 28px;
+        padding: 18px 36px 22px 36px;
+      }
+    }
+
+    .player-deck {
+      background: var(--surface-1);
+      border-radius: 0;
+      padding: 8px 14px 10px 14px;
+      padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      min-height: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 900px) {
+      .player-deck {
+        border: 1px solid var(--border-subtle);
+        border-radius: 24px;
+        padding: 16px 22px 14px 22px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .deck-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      min-height: 0;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .cover-wrapper {
+      width: 100%;
+      max-width: min(84vw, 300px);
+      aspect-ratio: 1 / 1;
+      height: auto;
+      max-height: min(300px, 34vh);
+      border-radius: 20px;
+      margin-bottom: 6px;
+      position: relative;
+      background: #0d0f17;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      flex-shrink: 1;
+    }
+
+    @media (min-width: 900px) {
+      .cover-wrapper {
+        max-width: min(440px, 40vh);
+        max-height: min(420px, 40vh);
+        border-radius: 24px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .cover-img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      transform: scale(1);
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .cover-wrapper::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 40%;
+      height: 200%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12), rgba(0, 240, 255, 0.18), transparent);
+      transform: rotate(25deg);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .is-playing .cover-wrapper {
+      border-color: rgba(255, 0, 60, 0.45);
+      animation: kpopAura 3.6s infinite alternate ease-in-out;
+    }
+
+    .is-playing .cover-img {
+      animation: kpopPulse 3.6s infinite alternate ease-in-out;
+    }
+
+    .is-playing .cover-wrapper::after {
+      opacity: 1;
+      animation: kpopSweep 4.5s infinite ease-in-out;
+    }
+
+    @keyframes kpopPulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.035); }
+    }
+
+    @keyframes kpopAura {
+      0% {
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8), 0 0 18px rgba(255, 0, 60, 0.25);
+      }
+      100% {
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85), 0 0 32px rgba(255, 0, 60, 0.45), 0 0 18px rgba(0, 240, 255, 0.25);
+      }
+    }
+
+    @keyframes kpopSweep {
+      0% { transform: translateX(0) rotate(25deg); }
+      25%, 100% { transform: translateX(550px) rotate(25deg); }
+    }
+
+    .meta-mode {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 2px;
+    }
+
+    .title-marquee-container {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      margin-bottom: 2px;
+      mask-image: linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 5%, #000 95%, transparent 100%);
+    }
+
+    .meta-title {
+      font-size: 17px;
+      font-weight: 800;
+      white-space: nowrap;
+      display: inline-block;
+      will-change: transform;
+      padding: 0 6px;
+    }
+
+    @media (min-width: 900px) {
+      .meta-title {
+        font-size: 21px;
+      }
+    }
+
+    .meta-title.animate-marquee {
+      animation: pingPongMarquee 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes pingPongMarquee {
+      0%, 15% { transform: translateX(0); }
+      85%, 100% { transform: translateX(var(--scroll-distance, -40px)); }
+    }
+
+    .meta-artist {
+      font-size: 12px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .deck-bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 900px) {
+      .deck-bottom {
+        gap: 10px;
+      }
+    }
+
+    .equalizer-canvas-container {
+      width: 100%;
+      height: 36px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: -2px;
+      overflow: hidden;
+      contain: strict;
+    }
+
+    @media (min-width: 900px) {
+      .equalizer-canvas-container {
+        height: 48px;
+      }
+    }
+
+    #equalizerCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+
+    .timeline {
+      width: 100%;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+      touch-action: none;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--skz-crimson), #ff4d6d);
+      border-radius: 8px;
+      box-shadow: 0 0 10px var(--skz-crimson);
+      pointer-events: none;
+      position: relative;
+    }
+
+    .progress-thumb {
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--skz-crimson);
+      opacity: 0.9;
+    }
+
+    .time-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* FILA DE CONTROLES: 4 BOTONES EXACTOS SIN DESBORDAMIENTO */
+    .playback-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 2px 0;
+    }
+
+    @media (min-width: 900px) {
+      .playback-controls {
+        gap: 16px;
+      }
+    }
+
+    .btn-step {
+      background: var(--surface-2);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      flex-shrink: 0;
+    }
+
+    .btn-step:active {
+      transform: scale(0.92);
+    }
+
+    .btn-play-hero {
+      background: linear-gradient(135deg, var(--skz-crimson), #e60036);
+      border: none;
+      color: white;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 6px 20px var(--skz-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      flex-shrink: 0;
+    }
+
+    .btn-play-hero:active {
+      transform: scale(0.94);
+    }
+
+    /* BOTÓN CANCIONES FLUIDO */
+    .btn-open-catalog {
+      background: rgba(255, 0, 60, 0.16);
+      border: 1px solid rgba(255, 0, 60, 0.45);
+      color: #ffffff;
+      padding: 0 14px;
+      height: 42px;
+      border-radius: 21px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      box-shadow: 0 0 10px rgba(255, 0, 60, 0.2);
+      flex-shrink: 0;
+    }
+
+    .btn-open-catalog:active {
+      transform: scale(0.94);
+      background: var(--skz-crimson);
+    }
+
+    @media (min-width: 900px) {
+      .btn-open-catalog {
+        display: none !important;
+      }
+    }
+
+    .volume-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 10px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      min-height: 34px;
+    }
+
+    .vol-icon {
+      width: 16px;
+      height: 16px;
+      fill: var(--text-muted);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: fill 0.2s;
+    }
+
+    .vol-icon:hover {
+      fill: var(--text-primary);
+    }
+
+    .volume-slider {
+      flex: 1;
+      height: 5px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: linear-gradient(to right, var(--skz-crimson) 100%, rgba(255, 255, 255, 0.1) 100%);
+      border-radius: 6px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 0 8px var(--skz-crimson);
+    }
+
+    .library-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      height: var(--app-height);
+      background: rgba(10, 12, 17, 0.98);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      z-index: 100;
+      padding: calc(12px + env(safe-area-inset-top, 0px)) 16px calc(12px + env(safe-area-inset-bottom, 0px)) 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+      transform: translateY(105%);
+      transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.2, 1);
+      visibility: hidden;
+    }
+
+    .library-panel.drawer-open {
+      transform: translateY(0%);
+      visibility: visible;
+    }
+
+    @media (min-width: 900px) {
+      .library-panel {
+        position: static;
+        width: 100%;
+        height: 100%;
+        background: var(--surface-1);
+        border: 1px solid var(--border-subtle);
+        border-radius: 24px;
+        padding: 20px 24px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        transform: none !important;
+        visibility: visible !important;
+        z-index: 1;
+        overflow: hidden;
+      }
+    }
+
+    .drawer-mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 900px) {
+      .drawer-mobile-header {
+        display: none;
+      }
+    }
+
+    .drawer-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-close-drawer {
+      background: var(--surface-2);
+      border: 1px solid var(--border-subtle);
+      color: #ffffff;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn-close-drawer:active {
+      background: var(--skz-crimson);
+    }
+
+    .panel-header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+
+    @media (min-width: 640px) {
+      .panel-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+
+    .tabs-group {
+      display: flex;
+      background: var(--surface-2);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 3px;
+      gap: 3px;
+      width: 100%;
+    }
+
+    @media (min-width: 640px) {
+      .tabs-group {
+        width: auto;
+      }
+    }
+
+    .tab-item {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      padding: 8px 12px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .tab-item.active {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+    }
+
+    .tab-pill {
+      background: var(--skz-crimson);
+      color: white;
+      font-size: 9px;
+      padding: 1px 6px;
+      border-radius: 10px;
+    }
+
+    .search-wrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: 640px) {
+      .search-wrapper {
+        max-width: 280px;
+      }
+    }
+
+    .search-field {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 8px 34px 8px 12px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      min-height: 38px;
+    }
+
+    .search-field:focus {
+      border-color: var(--border-focus);
+    }
+
+    .btn-clear-search {
+      position: absolute;
+      right: 8px;
+      width: 22px;
+      height: 22px;
+      background: rgba(255, 255, 255, 0.12);
+      border: none;
+      border-radius: 50%;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .btn-clear-search:hover {
+      background: var(--skz-crimson);
+      color: #ffffff;
+    }
+
+    .list-viewport {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      min-height: 0;
+      padding-right: 4px;
+    }
+
+    .list-viewport::-webkit-scrollbar {
+      width: 4px;
+    }
+    .list-viewport::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+
+    .tracks-grid {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .track-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid transparent;
+    }
+
+    .track-row:active {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .row-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .row-index {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      min-width: 20px;
+      flex-shrink: 0;
+    }
+
+    .row-details {
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    .row-name {
+      font-weight: 700;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .row-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-add-queue {
+      background: rgba(255, 0, 60, 0.14);
+      border: 1px solid rgba(255, 0, 60, 0.35);
+      color: #ff3366;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 6px 12px;
+      border-radius: 16px;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-left: 8px;
+    }
+
+    .btn-add-queue:active {
+      background: var(--skz-crimson);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-bar">
+    <div class="brand">
+      <svg class="brand-logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="headerLogoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#181b28"/>
+            <stop offset="100%" stop-color="#08090d"/>
+          </linearGradient>
+        </defs>
+        <rect width="64" height="64" rx="16" fill="url(#headerLogoBg)" stroke="#ff003c" stroke-width="4"/>
+        <text x="32" y="42" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="23" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">SKZ</text>
+        <circle cx="51" cy="15" r="3.5" fill="#00f0ff"/>
+      </svg>
+      <div class="brand-name">RADIO</div>
+    </div>
+    <div class="live-status">
+      <div class="pulse-dot"></div> EN VIVO
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="player-deck" id="playerDeck">
+      <div class="deck-top">
+        <div class="cover-wrapper">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%231a0308'/><stop offset='50%25' stop-color='%2308090d'/><stop offset='100%25' stop-color='%23020b12'/></linearGradient><linearGradient id='glow' x1='0%25' y1='0%25' x2='100%25' y2='0%25'><stop offset='0%25' stop-color='%23ff003c'/><stop offset='100%25' stop-color='%2300f0ff'/></linearGradient></defs><rect width='600' height='600' fill='url(%23g)'/><circle cx='300' cy='300' r='230' stroke='%23ff003c' stroke-width='3' fill='none' opacity='0.25'/><circle cx='300' cy='300' r='180' stroke='%2300f0ff' stroke-width='2' stroke-dasharray='8 6' fill='none' opacity='0.3'/><path d='M230 200 L370 200 L390 230 L210 230 Z' fill='%23ff003c' opacity='0.8'/><text x='300' y='325' font-family='sans-serif' font-weight='900' font-size='56' fill='%23ffffff' text-anchor='middle' letter-spacing='4'>STRAY KIDS</text><text x='300' y='365' font-family='sans-serif' font-weight='800' font-size='22' fill='url(%23glow)' text-anchor='middle' letter-spacing='10'>RADIO STREAM</text><rect x='150' y='410' width='300' height='4' fill='url(%23glow)' rx='2'/></svg>" 
+               id="coverImg" class="cover-img" alt="Stray Kids Cover">
+        </div>
+        <div class="meta-mode" id="modeIndicator">STANDBY // LISTO</div>
+        
+        <div class="title-marquee-container" id="marqueeBox">
+          <div class="meta-title" id="trackTitle">Selecciona o pulsa Play</div>
+        </div>
+
+        <div class="meta-artist" id="trackArtist">Stray Kids</div>
+      </div>
+
+      <div class="deck-bottom">
+        <div class="equalizer-canvas-container">
+          <canvas id="equalizerCanvas"></canvas>
+        </div>
+
+        <div class="timeline">
+          <div class="progress-track" id="progressTrack">
+            <div class="progress-fill" id="progressFill">
+              <div class="progress-thumb"></div>
+            </div>
+          </div>
+          <div class="time-labels">
+            <span id="labelCurrent">0:00</span>
+            <span id="labelTotal">0:00</span>
+          </div>
+        </div>
+
+        <div class="playback-controls">
+          <button class="btn-step" id="btnPrev" title="Anterior" aria-label="Canción anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+          </button>
+          
+          <button class="btn-play-hero" id="btnPlay" title="Reproducir / Pausar" aria-label="Reproducir o pausar">
+            <svg id="playIcon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          
+          <button class="btn-step" id="btnNext" title="Siguiente canción" aria-label="Siguiente canción">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+          </button>
+
+          <!-- BOTÓN CANCIONES AL LADO DE AVANZAR -->
+          <button class="btn-open-catalog" id="btnOpenSongs" title="Abrir catálogo de canciones" aria-label="Abrir catálogo">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            <span>CANCIONES</span>
+          </button>
+        </div>
+
+        <div class="volume-row">
+          <svg class="vol-icon" id="volMuteBtn" viewBox="0 0 24 24">
+            <path d="M7 9v6h4l5 5V4l-5 5H7z"/>
+          </svg>
+          <input type="range" class="volume-slider" id="volumeControl" min="0" max="1" step="0.01" value="1" aria-label="Control de volumen">
+          <svg class="vol-icon" id="volMaxBtn" viewBox="0 0 24 24">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="library-panel" id="libraryPanel">
+      <div class="drawer-mobile-header">
+        <div class="drawer-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color: var(--skz-crimson);"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+          <span>CATÁLOGO SKZ</span>
+        </div>
+        <button class="btn-close-drawer" id="btnCloseDrawer" title="Cerrar canciones" aria-label="Cerrar catálogo">✕</button>
+      </div>
+
+      <div class="panel-header">
+        <div class="tabs-group">
+          <button class="tab-item active" id="tabCatalog">CATÁLOGO</button>
+          <button class="tab-item" id="tabQueue">COLA <span class="tab-pill" id="queueBadge">0</span></button>
+        </div>
+
+        <div class="search-wrapper">
+          <input type="text" class="search-field" id="searchField" placeholder="Buscar canción" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          <button class="btn-clear-search" id="btnClearSearch" title="Borrar búsqueda" aria-label="Limpiar búsqueda">✕</button>
+        </div>
+      </div>
+
+      <div class="list-viewport">
+        <ul class="tracks-grid" id="catalogView"></ul>
+        <ul class="tracks-grid" id="queueView" style="display: none;"></ul>
+      </div>
+    </section>
+  </main>
+
+  <audio id="audioSource" preload="auto" crossorigin="anonymous"></audio>
+
+  <script>
+    const FALLBACK_TRACKS = [
+      { id: 1, title: "#Lovestay", artist: "Stray Kids", album: "SKZ Collection", file: "audio/#LoveSTAY.mp3" },
+      { id: 2, title: "0325", artist: "Stray Kids", album: "SKZ Collection", file: "audio/0325.mp3" },
+      { id: 3, title: "0801", artist: "Stray Kids", album: "SKZ Collection", file: "audio/0801.mp3" },
+      { id: 4, title: "19", artist: "Stray Kids", album: "SKZ Collection", file: "audio/19.mp3" },
+      { id: 5, title: "3Rd Eye", artist: "Stray Kids", album: "SKZ Collection", file: "audio/3rd Eye.mp3" },
+      { id: 6, title: "After You", artist: "Stray Kids", album: "SKZ Collection", file: "audio/After You.mp3" },
+      { id: 7, title: "Airplane", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Airplane.mp3" },
+      { id: 8, title: "Aiwokuretanoninaze", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Aiwokuretanoninaze.mp3" },
+      { id: 9, title: "Alien (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Alien (HAN).mp3" },
+      { id: 10, title: "Another Day", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Another Day.mp3" },
+      { id: 11, title: "Any", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Any.mp3" },
+      { id: 12, title: "As We Are (Seungmin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/As we are (Seungmin).mp3" },
+      { id: 13, title: "Astronaut", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Astronaut.mp3" },
+      { id: 14, title: "Awaken", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Awaken.mp3" },
+      { id: 15, title: "Awkward Silence", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Awkward Silence.mp3" },
+      { id: 16, title: "B Me", artist: "Stray Kids", album: "SKZ Collection", file: "audio/B Me.mp3" },
+      { id: 17, title: "Baby", artist: "Stray Kids", album: "SKZ Collection", file: "audio/BABY.mp3" },
+      { id: 18, title: "Beware", artist: "Stray Kids", album: "SKZ Collection", file: "audio/BEWARE.mp3" },
+      { id: 19, title: "Bleep", artist: "Stray Kids", album: "SKZ Collection", file: "audio/BLEEP.mp3" },
+      { id: 20, title: "Back Door", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Back Door.mp3" },
+      { id: 21, title: "Back Then", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Back Then.mp3" },
+      { id: 22, title: "Battle Ground (Korean Version)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Battle Ground (Korean Version).mp3" },
+      { id: 23, title: "Battle Ground", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Battle Ground.mp3" },
+      { id: 24, title: "Because (Changbin, Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Because (Changbin, Felix).mp3" },
+      { id: 25, title: "Behind The Light", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Behind The Light.mp3" },
+      { id: 26, title: "Blueprint", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Blueprint.mp3" },
+      { id: 27, title: "Bounce Back", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Bounce Back.mp3" },
+      { id: 28, title: "Boxer", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Boxer.mp3" },
+      { id: 29, title: "Broken Compass", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Broken Compass.mp3" },
+      { id: 30, title: "Case 143 Japanese Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CASE 143 -Japanese version-.mp3" },
+      { id: 31, title: "Ceremony (English Version)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CEREMONY (English Version).mp3" },
+      { id: 32, title: "Ceremony (Festival Version)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CEREMONY (Festival Version).mp3" },
+      { id: 33, title: "Ceremony", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CEREMONY.mp3" },
+      { id: 34, title: "Cheese", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CHEESE.mp3" },
+      { id: 35, title: "Chill Japanese Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CHILL -Japanese version-.mp3" },
+      { id: 36, title: "Creed", artist: "Stray Kids", album: "SKZ Collection", file: "audio/CREED.mp3" },
+      { id: 37, title: "Charmer", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Charmer.mp3" },
+      { id: 38, title: "Chk Chk Boom Japanese Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Chk Chk Boom -Japanese version-.mp3" },
+      { id: 39, title: "Christmas Love", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Christmas Love.mp3" },
+      { id: 40, title: "Chronosaurus", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Chronosaurus.mp3" },
+      { id: 41, title: "Close (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Close (HAN).mp3" },
+      { id: 42, title: "Collision", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Collision.mp3" },
+      { id: 43, title: "Connected (Bang Chan)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Connected (Bang Chan).mp3" },
+      { id: 44, title: "Dlc", artist: "Stray Kids", album: "SKZ Collection", file: "audio/DLC.mp3" },
+      { id: 45, title: "Dlmlu", artist: "Stray Kids", album: "SKZ Collection", file: "audio/DLMLU.mp3" },
+      { id: 46, title: "Domino", artist: "Stray Kids", album: "SKZ Collection", file: "audio/DOMINO.mp3" },
+      { id: 47, title: "Doodle (Changbin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/DOODLE (Changbin).mp3" },
+      { id: 48, title: "Deep End (Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Deep end (Felix).mp3" },
+      { id: 49, title: "District 9", artist: "Stray Kids", album: "SKZ Collection", file: "audio/District 9.mp3" },
+      { id: 50, title: "Don’t Say", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Don’t Say.mp3" },
+      { id: 51, title: "Double Knot", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Double Knot.mp3" },
+      { id: 52, title: "Drive (Bang Chan, Lee Know)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Drive (Bang Chan, Lee Know).mp3" },
+      { id: 53, title: "Easy", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Easy.mp3" },
+      { id: 54, title: "Ex", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Ex.mp3" },
+      { id: 55, title: "Fam (Korean Ver.)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/FAM (Korean Ver.).mp3" },
+      { id: 56, title: "Farming", artist: "Stray Kids", album: "SKZ Collection", file: "audio/FARMING.mp3" },
+      { id: 57, title: "Fnf", artist: "Stray Kids", album: "SKZ Collection", file: "audio/FNF.mp3" },
+      { id: 58, title: "Freeze", artist: "Stray Kids", album: "SKZ Collection", file: "audio/FREEZE.mp3" },
+      { id: 59, title: "Falling Up English Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Falling Up -English version-.mp3" },
+      { id: 60, title: "Falling Up", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Falling Up.mp3" },
+      { id: 61, title: "For You", artist: "Stray Kids", album: "SKZ Collection", file: "audio/For You.mp3" },
+      { id: 62, title: "Get Lit", artist: "Stray Kids", album: "SKZ Collection", file: "audio/GET LIT.mp3" },
+      { id: 63, title: "Giant", artist: "Stray Kids", album: "SKZ Collection", file: "audio/GIANT.mp3" },
+      { id: 64, title: "Go Live", artist: "Stray Kids", album: "SKZ Collection", file: "audio/GO LIVE.mp3" },
+      { id: 65, title: "Get Cool", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Get Cool.mp3" },
+      { id: 66, title: "Ghost", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Ghost.mp3" },
+      { id: 67, title: "God’s Menu", artist: "Stray Kids", album: "SKZ Collection", file: "audio/God’s Menu.mp3" },
+      { id: 68, title: "Gone Away (Han, Seungmin, I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Gone Away (HAN, Seungmin, I.N).mp3" },
+      { id: 69, title: "Goodbye", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Goodbye.mp3" },
+      { id: 70, title: "Grow Up", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Grow Up.mp3" },
+      { id: 71, title: "Hallucination (I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/HALLUCINATION (I.N).mp3" },
+      { id: 72, title: "Happy (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/HaPpY (HAN).mp3" },
+      { id: 73, title: "Half Time", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Half Time.mp3" },
+      { id: 74, title: "Hall Of Fame", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hall of Fame.mp3" },
+      { id: 75, title: "Haven", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Haven.mp3" },
+      { id: 76, title: "Hellevator", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hellevator.mp3" },
+      { id: 77, title: "Hold My Hand (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hold My Hand (HAN).mp3" },
+      { id: 78, title: "Hoodie Season", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hoodie Season.mp3" },
+      { id: 79, title: "Hug Me (I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hug Me (I.N).mp3" },
+      { id: 80, title: "Hug Me (Live)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Hug Me (Live).mp3" },
+      { id: 81, title: "I Do", artist: "Stray Kids", album: "SKZ Collection", file: "audio/I Do.mp3" },
+      { id: 82, title: "I Got It (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/I GOT IT (HAN).mp3" },
+      { id: 83, title: "I Am You", artist: "Stray Kids", album: "SKZ Collection", file: "audio/I am YOU.mp3" },
+      { id: 84, title: "Item", artist: "Stray Kids", album: "SKZ Collection", file: "audio/ITEM.mp3" },
+      { id: 85, title: "In My Head", artist: "Stray Kids", album: "SKZ Collection", file: "audio/In My Head.mp3" },
+      { id: 86, title: "Insomnia", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Insomnia.mp3" },
+      { id: 87, title: "Into The Current", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Into The Current.mp3" },
+      { id: 88, title: "Lover", artist: "Stray Kids", album: "SKZ Collection", file: "audio/LOVER.mp3" },
+      { id: 89, title: "Levanter", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Levanter.mp3" },
+      { id: 90, title: "Limbo (Lee Know)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Limbo (Lee Know).mp3" },
+      { id: 91, title: "Limbo (Live)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Limbo (Live).mp3" },
+      { id: 92, title: "Lonely St", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Lonely St.mp3" },
+      { id: 93, title: "Lost Me", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Lost Me.mp3" },
+      { id: 94, title: "Love Untold (Hyunjin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Love Untold (Hyunjin).mp3" },
+      { id: 95, title: "M.I.A", artist: "Stray Kids", album: "SKZ Collection", file: "audio/M.I.A.mp3" },
+      { id: 96, title: "Maniac", artist: "Stray Kids", album: "SKZ Collection", file: "audio/MANIAC.mp3" },
+      { id: 97, title: "Mess", artist: "Stray Kids", album: "SKZ Collection", file: "audio/MESS.mp3" },
+      { id: 98, title: "Mic&Brush", artist: "Stray Kids", album: "SKZ Collection", file: "audio/MIC&BRUSH.mp3" },
+      { id: 99, title: "Miroh", artist: "Stray Kids", album: "SKZ Collection", file: "audio/MIROH.mp3" },
+      { id: 100, title: "Maknae On Top (I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Maknae On Top (I.N).mp3" },
+      { id: 101, title: "Maze Of Memories", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Maze of Memories.mp3" },
+      { id: 102, title: "Mirror", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Mirror.mp3" },
+      { id: 103, title: "Mixtape Gone Days", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Mixtape _ Gone Days.mp3" },
+      { id: 104, title: "Mixtape Oh", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Mixtape _ OH.mp3" },
+      { id: 105, title: "Mixtape On Track", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Mixtape _ On Track.mp3" },
+      { id: 106, title: "Mixtape Time Out", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Mixtape _ Time Out.mp3" },
+      { id: 107, title: "Muddy Water (Changbin, Hyunjin, Han, Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Muddy Water (Changbin, Hyunjin, HAN, Felix).mp3" },
+      { id: 108, title: "My Name", artist: "Stray Kids", album: "SKZ Collection", file: "audio/My Name.mp3" },
+      { id: 109, title: "My Pace", artist: "Stray Kids", album: "SKZ Collection", file: "audio/My Pace.mp3" },
+      { id: 110, title: "My Side", artist: "Stray Kids", album: "SKZ Collection", file: "audio/My Side.mp3" },
+      { id: 111, title: "My Universe (Seungmin, I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/My Universe (Seungmin, I.N).mp3" },
+      { id: 112, title: "Night English Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/NIGHT -English version-.mp3" },
+      { id: 113, title: "Night", artist: "Stray Kids", album: "SKZ Collection", file: "audio/NIGHT.mp3" },
+      { id: 114, title: "N S", artist: "Stray Kids", album: "SKZ Collection", file: "audio/N_S.mp3" },
+      { id: 115, title: "Novel", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Novel.mp3" },
+      { id: 116, title: "Perfume", artist: "Stray Kids", album: "SKZ Collection", file: "audio/PERFUME.mp3" },
+      { id: 117, title: "Pacemaker", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Pacemaker.mp3" },
+      { id: 118, title: "Phobia", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Phobia.mp3" },
+      { id: 119, title: "Phoenix", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Phoenix.mp3" },
+      { id: 120, title: "Piece Of A Puzzle (Changbin, Seungmin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Piece of a Puzzle (Changbin, Seungmin).mp3" },
+      { id: 121, title: "Placebo", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Placebo.mp3" },
+      { id: 122, title: "Question", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Question.mp3" },
+      { id: 123, title: "Rev It Up", artist: "Stray Kids", album: "SKZ Collection", file: "audio/REV IT UP.mp3" },
+      { id: 124, title: "Rock", artist: "Stray Kids", album: "SKZ Collection", file: "audio/ROCK.mp3" },
+      { id: 125, title: "Run (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/RUN (HAN).mp3" },
+      { id: 126, title: "Run It", artist: "Stray Kids", album: "SKZ Collection", file: "audio/RUN IT.mp3" },
+      { id: 127, title: "Railway (Bang Chan)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Railway (Bang Chan).mp3" },
+      { id: 128, title: "Raining Stars", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Raining stars.mp3" },
+      { id: 129, title: "Red Lights (Bang Chan, Hyunjin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Red Lights (Bang Chan, Hyunjin).mp3" },
+      { id: 130, title: "Roman Empire", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Roman Empire.mp3" },
+      { id: 131, title: "S Class", artist: "Stray Kids", album: "SKZ Collection", file: "audio/S-Class.mp3" },
+      { id: 132, title: "Slump ( Tower Of God Ed)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/SLUMP (_Tower of God_ ED).mp3" },
+      { id: 133, title: "Ssick", artist: "Stray Kids", album: "SKZ Collection", file: "audio/SSICK.mp3" },
+      { id: 134, title: "Stay", artist: "Stray Kids", album: "SKZ Collection", file: "audio/STAY.mp3" },
+      { id: 135, title: "Saiyan", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Saiyan.mp3" },
+      { id: 136, title: "Scars (Korean Ver.)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Scars (Korean Ver.).mp3" },
+      { id: 137, title: "Scars", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Scars.mp3" },
+      { id: 138, title: "Secret Secret", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Secret Secret.mp3" },
+      { id: 139, title: "Side Effects", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Side Effects.mp3" },
+      { id: 140, title: "Silent Cry", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Silent Cry.mp3" },
+      { id: 141, title: "So Good (Hyunjin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/So Good (Hyunjin).mp3" },
+      { id: 142, title: "Sorry, I Love You", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Sorry, I Love You.mp3" },
+      { id: 143, title: "Spread My Wings", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Spread My Wings.mp3" },
+      { id: 144, title: "Star Lost", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Star Lost.mp3" },
+      { id: 145, title: "Stars And Raindrops (Seungmin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Stars and Raindrops (Seungmin).mp3" },
+      { id: 146, title: "Still Here", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Still here.mp3" },
+      { id: 147, title: "Streetlight (Changbin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Streetlight (Changbin).mp3" },
+      { id: 148, title: "Super Bowl", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Super Bowl.mp3" },
+      { id: 149, title: "Surfin’ (Lee Know, Changbin, Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Surfin’ (Lee Know, Changbin, Felix).mp3" },
+      { id: 150, title: "Ta", artist: "Stray Kids", album: "SKZ Collection", file: "audio/TA.mp3" },
+      { id: 151, title: "The Sound (Korean Ver.)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/THE SOUND (Korean Ver.).mp3" },
+      { id: 152, title: "The Sound", artist: "Stray Kids", album: "SKZ Collection", file: "audio/THE SOUND.mp3" },
+      { id: 153, title: "Tmt", artist: "Stray Kids", album: "SKZ Collection", file: "audio/TMT.mp3" },
+      { id: 154, title: "Top ( Tower Of God Op)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/TOP (_Tower of God_ OP).mp3" },
+      { id: 155, title: "Topline (Feat. Tiger Jk)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/TOPLINE (Feat. Tiger JK).mp3" },
+      { id: 156, title: "The Little Things", artist: "Stray Kids", album: "SKZ Collection", file: "audio/The Little Things.mp3" },
+      { id: 157, title: "The Tortoise And The Hare", artist: "Stray Kids", album: "SKZ Collection", file: "audio/The Tortoise and the Hare.mp3" },
+      { id: 158, title: "The View", artist: "Stray Kids", album: "SKZ Collection", file: "audio/The View.mp3" },
+      { id: 159, title: "There", artist: "Stray Kids", album: "SKZ Collection", file: "audio/There.mp3" },
+      { id: 160, title: "This & That (Festival Version)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/This & That (Festival Version).mp3" },
+      { id: 161, title: "This & That", artist: "Stray Kids", album: "SKZ Collection", file: "audio/This & That.mp3" },
+      { id: 162, title: "Thunderous Japanese Version", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Thunderous -Japanese version-.mp3" },
+      { id: 163, title: "Thunderous", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Thunderous.mp3" },
+      { id: 164, title: "U (Feat. Tablo)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/U (Feat. TABLO).mp3" },
+      { id: 165, title: "Ultra (Changbin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/ULTRA (Changbin).mp3" },
+      { id: 166, title: "Unfair (Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Unfair (Felix).mp3" },
+      { id: 167, title: "Up All Night (Bang Chan, Changbin, Felix, Seungmin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Up All Night (Bang Chan, Changbin, Felix, Seungmin).mp3" },
+      { id: 168, title: "Venom", artist: "Stray Kids", album: "SKZ Collection", file: "audio/VENOM.mp3" },
+      { id: 169, title: "Victory Song", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Victory Song.mp3" },
+      { id: 170, title: "Voices", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Voices.mp3" },
+      { id: 171, title: "Why ", artist: "Stray Kids", album: "SKZ Collection", file: "audio/WHY_.mp3" },
+      { id: 172, title: "Wolfgang", artist: "Stray Kids", album: "SKZ Collection", file: "audio/WOLFGANG.mp3" },
+      { id: 173, title: "Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N).mp3" },
+      { id: 174, title: "Walkin On Water (Hip Ver.)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Walkin On Water (HIP Ver.).mp3" },
+      { id: 175, title: "Walkin On Water", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Walkin On Water.mp3" },
+      { id: 176, title: "Way Out", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Way Out.mp3" },
+      { id: 177, title: "We Go (Bang Chan, Changbin, Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/We Go (Bang Chan, Changbin, HAN).mp3" },
+      { id: 178, title: "Wish You Back (Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Wish You Back (HAN).mp3" },
+      { id: 179, title: "Wow (Lee Know, Hyunjin, Felix)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Wow (Lee Know, Hyunjin, Felix).mp3" },
+      { id: 180, title: "Yayaya", artist: "Stray Kids", album: "SKZ Collection", file: "audio/YAYAYA.mp3" },
+      { id: 181, title: "Youth (Lee Know)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Youth (Lee Know).mp3" },
+      { id: 182, title: "Youtiful", artist: "Stray Kids", album: "SKZ Collection", file: "audio/Youtiful.mp3" },
+      { id: 183, title: "Zone (Bang Chan, Changbin, Han)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/ZONE (Bang Chan, Changbin, HAN).mp3" },
+      { id: 184, title: "I Hate To Admit (Bang Chan)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/i hate to admit (Bang Chan).mp3" },
+      { id: 185, title: "Ice.Cream (Hyunjin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/ice.cream (Hyunjin).mp3" },
+      { id: 186, title: "Miss You (Hyunjin)", artist: "Stray Kids", album: "SKZ Collection", file: "audio/miss you (Hyunjin).mp3" }
+    ];
+
+    const ALBUM_MAP = {
+      "#lovestay": "SKZ-REPLAY",
+      "0325": "I am YOU",
+      "0801": "HOP",
+      "19": "Clé 1 : MIROH",
+      "3rd eye": "I am NOT",
+      "after you": "HOP",
+      "airplane": "GO LIVE",
+      "aiwokuretanoninaze": "CIRCUS",
+      "alien (han)": "SKZ-REPLAY",
+      "another day": "GO LIVE",
+      "any": "IN LIFE",
+      "as we are (seungmin)": "SKZ-REPLAY",
+      "astronaut": "Clé : LEVANTER",
+      "awaken": "I am NOT",
+      "awkward silence": "I am WHO",
+      "b me": "IN LIFE",
+      "baby": "Mixtape",
+      "beware": "Mixtape",
+      "bleep": "HOP",
+      "back door": "IN LIFE",
+      "back then": "HOP",
+      "battle ground": "THE SOUND",
+      "battle ground (korean version)": "THE SOUND",
+      "because (changbin, felix)": "SKZ-REPLAY",
+      "behind the light": "SKZ-REPLAY",
+      "blueprint": "GO LIVE",
+      "bounce back": "HOP",
+      "boxer": "Clé 1 : MIROH",
+      "broken compass": "SKZ2020",
+      "case 143": "MAXIDENT",
+      "case 143 japanese version": "THE SOUND",
+      "ceremony": "HOP",
+      "ceremony (english version)": "HOP",
+      "ceremony (festival version)": "HOP",
+      "cheese": "NOEASY",
+      "chill": "MAXIDENT",
+      "chill japanese version": "THE SOUND",
+      "creed": "HOP",
+      "charmer": "ODDINARY",
+      "chk chk boom": "ATE",
+      "chk chk boom japanese version": "GIANT",
+      "christmas love": "Christmas EveL",
+      "chronosaurus": "Clé 1 : MIROH",
+      "close (han)": "SKZ-REPLAY",
+      "collision": "5-STAR",
+      "connected (bang chan)": "SKZ-REPLAY",
+      "dlc": "5-STAR",
+      "dlmlu": "THE SOUND",
+      "domino": "NOEASY",
+      "doodle (changbin)": "SKZ-REPLAY",
+      "deep end (felix)": "SKZ-REPLAY",
+      "district 9": "I am NOT",
+      "don’t say": "HOP",
+      "double knot": "Clé : LEVANTER",
+      "drive (bang chan, lee know)": "SKZ-REPLAY",
+      "easy": "GO LIVE",
+      "ex": "IN LIFE",
+      "fam": "ALL IN",
+      "fam (korean ver.)": "SKZ2021",
+      "farming": "HOP",
+      "fnf": "5-STAR",
+      "freeze": "ODDINARY",
+      "falling up": "GIANT",
+      "falling up english version": "GIANT",
+      "for you": "Mixtape",
+      "get lit": "5-STAR",
+      "giant": "GIANT",
+      "go live": "GO LIVE",
+      "get cool": "I am WHO",
+      "ghost": "HOP",
+      "god’s menu": "GO LIVE",
+      "gone away (han, seungmin, i.n)": "NOEASY",
+      "goodbye": "HOP",
+      "grow up": "I am NOT",
+      "hallucination (i.n)": "SKZ-REPLAY",
+      "happy (han)": "SKZ-REPLAY",
+      "half time": "HOP",
+      "hall of fame": "5-STAR",
+      "haven": "GO LIVE",
+      "hellevator": "Mixtape",
+      "hold my hand (han)": "SKZ-REPLAY",
+      "hoodie season": "SKZ2021",
+      "hug me (i.n)": "SKZ-REPLAY",
+      "hug me (live)": "SKZ-REPLAY",
+      "i do": "HOP",
+      "i got it (han)": "SKZ-REPLAY",
+      "i am you": "I am YOU",
+      "item": "5-STAR",
+      "in my head": "SKZ-RECORD",
+      "insomnia": "I am WHO",
+      "into the current": "HOP",
+      "lover": "HOP",
+      "levanter": "Clé : LEVANTER",
+      "limbo (lee know)": "SKZ-REPLAY",
+      "limbo (live)": "SKZ-REPLAY",
+      "lonely st": "ODDINARY",
+      "lost me": "CIRCUS",
+      "love untold (hyunjin)": "SKZ-REPLAY",
+      "m.i.a": "I am WHO",
+      "maniac": "ODDINARY",
+      "mess": "HOP",
+      "mic&brush": "HOP",
+      "miroh": "Clé 1 : MIROH",
+      "maknae on top (i.n)": "SKZ-REPLAY",
+      "maze of memories": "Clé 1 : MIROH",
+      "mirror": "I am NOT",
+      "mixtape gone days": "GO LIVE",
+      "mixtape oh": "NOEASY",
+      "mixtape on track": "GO LIVE",
+      "mixtape time out": "SKZ-REPLAY",
+      "muddy water (changbin, hyunjin, han, felix)": "ODDINARY",
+      "my name": "HOP",
+      "my pace": "I am WHO",
+      "my side": "I am YOU",
+      "my universe (seungmin, i.n)": "IN LIFE",
+      "night": "GIANT",
+      "night english version": "GIANT",
+      "n s": "I am WHO",
+      "novel": "THE SOUND",
+      "perfume": "HOP",
+      "pacemaker": "GO LIVE",
+      "phobia": "GO LIVE",
+      "phoenix": "HOP",
+      "piece of a puzzle (changbin, seungmin)": "SKZ-REPLAY",
+      "placebo": "SKZ2021",
+      "question": "I am WHO",
+      "rev it up": "HOP",
+      "rock": "I am NOT",
+      "run (han)": "SKZ-REPLAY",
+      "run it": "SKZ-RECORD",
+      "railway (bang chan)": "SKZ-REPLAY",
+      "raining stars": "HOP",
+      "red lights (bang chan, hyunjin)": "NOEASY",
+      "roman empire": "HOP",
+      "s class": "5-STAR",
+      "slump ( tower of god ed)": "TOP",
+      "ssick": "NOEASY",
+      "stay": "I am YOU",
+      "saiyan": "HOP",
+      "scars": "Scars",
+      "scars (korean ver.)": "SKZ2021",
+      "secret secret": "NOEASY",
+      "side effects": "Clé 2 : Yellow Wood",
+      "silent cry": "NOEASY",
+      "so good (hyunjin)": "SKZ-REPLAY",
+      "sorry, i love you": "NOEASY",
+      "spread my wings": "Mixtape",
+      "star lost": "NOEASY",
+      "stars and raindrops (seungmin)": "SKZ-REPLAY",
+      "still here": "ALL IN",
+      "streetlight (changbin)": "SKZ-REPLAY",
+      "super bowl": "GO LIVE",
+      "surfin’ (lee know, changbin, felix)": "NOEASY",
+      "ta": "GO LIVE",
+      "the sound": "THE SOUND",
+      "the sound (korean ver.)": "THE SOUND",
+      "tmt": "Clé 2 : Yellow Wood",
+      "top ( tower of god op)": "TOP",
+      "topline (feat. tiger jk)": "5-STAR",
+      "the little things": "HOP",
+      "the tortoise and the hare": "IN LIFE",
+      "the view": "NOEASY",
+      "there": "THE SOUND",
+      "this & that": "HOP",
+      "this & that (festival version)": "HOP",
+      "thunderous": "NOEASY",
+      "thunderous japanese version": "THE SOUND",
+      "u (feat. tablo)": "HOP",
+      "ultra (changbin)": "HOP",
+      "unfair (felix)": "HOP",
+      "up all night (bang chan, changbin, felix, seungmin)": "SKZ-REPLAY",
+      "venom": "ODDINARY",
+      "victory song": "Clé 1 : MIROH",
+      "voices": "I am WHO",
+      "why ": "WHY?",
+      "wolfgang": "NOEASY",
+      "waiting for us (bang chan, lee know, seungmin, i.n)": "ODDINARY",
+      "walkin on water": "HOP",
+      "walkin on water (hip ver.)": "HOP",
+      "way out": "HOP",
+      "we go (bang chan, changbin, han)": "IN LIFE",
+      "wish you back (han)": "SKZ-REPLAY",
+      "wow (lee know, hyunjin, felix)": "IN LIFE",
+      "yayaya": "Mixtape",
+      "youth (lee know)": "HOP",
+      "youtiful": "5-STAR",
+      "zone (bang chan, changbin, han)": "SKZ-REPLAY",
+      "i hate to admit (bang chan)": "SKZ-REPLAY",
+      "ice.cream (hyunjin)": "SKZ-REPLAY",
+      "miss you (hyunjin)": "SKZ-REPLAY"
+    };
+
+    function enrichTracksWithAlbums(list) {
+      if (!Array.isArray(list)) return list;
+      return list.map(t => {
+        if (!t.album || t.album === "SKZ Collection") {
+          const key = (t.title || "").toLowerCase().trim();
+          const cleanKey = key.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+          const found = ALBUM_MAP[key] || ALBUM_MAP[cleanKey];
+          if (found) {
+            t.album = found;
+          }
+        }
+        return t;
+      });
+    }
+
+    let TRACKS = enrichTracksWithAlbums([...FALLBACK_TRACKS]);
+    let currentTrack = null;
+    let queue = [];
+    let history = [];
+    let isPlaying = false;
+    let isDragging = false;
+    const coverCache = {};
+    const albumCache = {};
+
+    const audio = document.getElementById("audioSource");
+    const playerDeck = document.getElementById("playerDeck");
+    const libraryPanel = document.getElementById("libraryPanel");
+    const coverImg = document.getElementById("coverImg");
+    const marqueeBox = document.getElementById("marqueeBox");
+    const trackTitle = document.getElementById("trackTitle");
+    const trackArtist = document.getElementById("trackArtist");
+    const modeIndicator = document.getElementById("modeIndicator");
+    const progressTrack = document.getElementById("progressTrack");
+    const progressFill = document.getElementById("progressFill");
+    const labelCurrent = document.getElementById("labelCurrent");
+    const labelTotal = document.getElementById("labelTotal");
+    const btnPlay = document.getElementById("btnPlay");
+    const playIcon = document.getElementById("playIcon");
+    const btnNext = document.getElementById("btnNext");
+    const btnPrev = document.getElementById("btnPrev");
+    const btnOpenSongs = document.getElementById("btnOpenSongs");
+    const btnCloseDrawer = document.getElementById("btnCloseDrawer");
+    const volumeControl = document.getElementById("volumeControl");
+    const volMuteBtn = document.getElementById("volMuteBtn");
+    const volMaxBtn = document.getElementById("volMaxBtn");
+
+    const tabCatalog = document.getElementById("tabCatalog");
+    const tabQueue = document.getElementById("tabQueue");
+    const catalogView = document.getElementById("catalogView");
+    const queueView = document.getElementById("queueView");
+    const queueBadge = document.getElementById("queueBadge");
+    const searchField = document.getElementById("searchField");
+    const btnClearSearch = document.getElementById("btnClearSearch");
+
+    const DEFAULT_SVG_COVER = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%231a0308'/><stop offset='50%25' stop-color='%2308090d'/><stop offset='100%25' stop-color='%23020b12'/></linearGradient><linearGradient id='glow' x1='0%25' y1='0%25' x2='100%25' y2='0%25'><stop offset='0%25' stop-color='%23ff003c'/><stop offset='100%25' stop-color='%2300f0ff'/></linearGradient></defs><rect width='600' height='600' fill='url(%23g)'/><circle cx='300' cy='300' r='230' stroke='%23ff003c' stroke-width='3' fill='none' opacity='0.25'/><circle cx='300' cy='300' r='180' stroke='%2300f0ff' stroke-width='2' stroke-dasharray='8 6' fill='none' opacity='0.3'/><path d='M230 200 L370 200 L390 230 L210 230 Z' fill='%23ff003c' opacity='0.8'/><text x='300' y='325' font-family='sans-serif' font-weight='900' font-size='56' fill='%23ffffff' text-anchor='middle' letter-spacing='4'>STRAY KIDS</text><text x='300' y='365' font-family='sans-serif' font-weight='800' font-size='22' fill='url(%23glow)' text-anchor='middle' letter-spacing='10'>RADIO STREAM</text><rect x='150' y='410' width='300' height='4' fill='url(%23glow)' rx='2'/></svg>";
+
+    const canvas = document.getElementById("equalizerCanvas");
+    const ctx = canvas ? canvas.getContext("2d", { alpha: true }) : null;
+    let audioCtx = null;
+    let analyser = null;
+    let dataArray = null;
+
+    const NUM_BARS = 28;
+    const peaks = new Float32Array(NUM_BARS);
+    let precomputedBins = new Uint16Array(NUM_BARS);
+    let precomputedBoosts = new Float32Array(NUM_BARS);
+    let cachedBarGradient = null;
+    let eqLogicalWidth = 0;
+    let eqLogicalHeight = 0;
+    let eqAnimId = null;
+
+    function buildPrecomputedLookup() {
+      const minIndex = 1;
+      const binCount = analyser ? analyser.frequencyBinCount : 128;
+      const maxIndex = Math.max(2, Math.floor(binCount * 0.65));
+
+      for (let i = 0; i < NUM_BARS; i++) {
+        const fraction = i / (NUM_BARS - 1);
+        precomputedBins[i] = Math.min(
+          maxIndex,
+          Math.floor(minIndex * Math.pow(maxIndex / minIndex, fraction))
+        );
+        precomputedBoosts[i] = 1 + Math.pow(fraction, 1.7) * 0.92;
+      }
+    }
+
+    function resizeCanvas() {
+      if (!canvas || !canvas.parentElement || !ctx) return;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+
+      eqLogicalWidth = rect.width;
+      eqLogicalHeight = rect.height;
+
+      // Escalar al pixel ratio de la pantalla (limitado a 2x para evitar sobrecarga en gama baja)
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(eqLogicalWidth * dpr);
+      canvas.height = Math.round(eqLogicalHeight * dpr);
+
+      // Normalizar contexto a coordenadas CSS para nitidez absoluta sin bordes borrosos
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(dpr, dpr);
+
+      // Reutilizar un único degradado vertical precalculado (no crear miles por segundo)
+      cachedBarGradient = ctx.createLinearGradient(0, eqLogicalHeight, 0, 0);
+      cachedBarGradient.addColorStop(0, "#ff003c");
+      cachedBarGradient.addColorStop(0.55, "#ff2a6d");
+      cachedBarGradient.addColorStop(1, "#00f0ff");
+
+      buildPrecomputedLookup();
+
+      if (!isPlaying) {
+        renderIdleBars();
+      }
+    }
+
+    function setAppHeight() {
+      const doc = document.documentElement;
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+      resizeCanvas();
+    }
+    window.addEventListener('resize', setAppHeight, { passive: true });
+    window.addEventListener('orientationchange', () => setTimeout(setAppHeight, 150), { passive: true });
+    setAppHeight();
+
+    function initAudioContext() {
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          analyser = audioCtx.createAnalyser();
+          analyser.fftSize = 256;
+          analyser.minDecibels = -80;
+          analyser.maxDecibels = -10;
+          analyser.smoothingTimeConstant = 0.58;
+
+          try {
+            const source = audioCtx.createMediaElementSource(audio);
+            source.connect(analyser);
+            analyser.connect(audioCtx.destination);
+          } catch (e) {
+            console.warn("Audio node routing notice:", e);
+          }
+          dataArray = new Uint8Array(analyser.frequencyBinCount);
+          buildPrecomputedLookup();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+      } catch (err) {
+        console.warn("AudioContext init handled:", err);
+      }
+    }
+
+    function renderIdleBars() {
+      if (!ctx || eqLogicalWidth <= 0 || eqLogicalHeight <= 0) return;
+      ctx.clearRect(0, 0, eqLogicalWidth, eqLogicalHeight);
+      const barSpacing = Math.max(2, Math.floor(eqLogicalWidth / 130));
+      const barWidth = Math.max(2, Math.floor((eqLogicalWidth - (NUM_BARS - 1) * barSpacing) / NUM_BARS));
+      const baselineY = eqLogicalHeight - 3;
+
+      ctx.fillStyle = "rgba(255, 255, 255, 0.12)";
+      for (let i = 0; i < NUM_BARS; i++) {
+        const x = i * (barWidth + barSpacing);
+        ctx.fillRect(x, baselineY, barWidth, 3);
+        peaks[i] = 0;
+      }
+    }
+
+    function drawEqualizer() {
+      if (!isPlaying || !analyser || !ctx || eqLogicalWidth <= 0) {
+        renderIdleBars();
+        return;
+      }
+
+      eqAnimId = requestAnimationFrame(drawEqualizer);
+      ctx.clearRect(0, 0, eqLogicalWidth, eqLogicalHeight);
+
+      analyser.getByteFrequencyData(dataArray);
+
+      const barSpacing = Math.max(2, Math.floor(eqLogicalWidth / 130));
+      const barWidth = Math.max(2, Math.floor((eqLogicalWidth - (NUM_BARS - 1) * barSpacing) / NUM_BARS));
+      const H = eqLogicalHeight;
+
+      // 1. Dibujar todas las barras con el degradado en un solo pase de estilo
+      ctx.fillStyle = cachedBarGradient || "#ff003c";
+      for (let i = 0; i < NUM_BARS; i++) {
+        const val = dataArray[precomputedBins[i]] || 0;
+        const norm = Math.min(1, (val / 255) * precomputedBoosts[i]);
+        let barHeight = Math.pow(norm, 1.22) * H * 1.3;
+        if (barHeight < 3) barHeight = 3;
+        else if (barHeight > H) barHeight = H;
+
+        const x = i * (barWidth + barSpacing);
+        const y = H - barHeight;
+
+        ctx.fillRect(x, y, barWidth, barHeight);
+
+        if (barHeight >= peaks[i]) {
+          peaks[i] = barHeight;
+        } else {
+          peaks[i] = Math.max(0, peaks[i] - 1.9);
+        }
+      }
+
+      // 2. Dibujar los topes de pico en un solo pase secundario
+      ctx.fillStyle = "#ffffff";
+      for (let i = 0; i < NUM_BARS; i++) {
+        if (peaks[i] > 5) {
+          const x = i * (barWidth + barSpacing);
+          const peakY = H - peaks[i];
+          ctx.fillRect(x, peakY - 3, barWidth, 2);
+        }
+      }
+    }
+
+    function startEqualizer() {
+      if (!eqAnimId) {
+        eqAnimId = requestAnimationFrame(drawEqualizer);
+      }
+    }
+
+    function stopEqualizer() {
+      if (eqAnimId) {
+        cancelAnimationFrame(eqAnimId);
+        eqAnimId = null;
+      }
+      renderIdleBars();
+    }
+
+    function updateTitleMarquee(title) {
+      trackTitle.textContent = title;
+      trackTitle.classList.remove("animate-marquee");
+      trackTitle.style.transform = "translateX(0)";
+
+      requestAnimationFrame(() => {
+        const containerW = marqueeBox.clientWidth;
+        const textW = trackTitle.scrollWidth;
+
+        if (textW > containerW - 6) {
+          const distance = -(textW - containerW + 20);
+          trackTitle.style.setProperty("--scroll-distance", `${distance}px`);
+          trackTitle.classList.add("animate-marquee");
+        }
+      });
+    }
+
+    async function loadCatalog() {
+      const isBlobOrAbout = window.location.protocol === 'blob:' || window.location.protocol === 'about:';
+      let loaded = false;
+
+      if (!isBlobOrAbout) {
+        try {
+          const res = await fetch('canciones.json');
+          if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              TRACKS = data;
+              loaded = true;
+            }
+          }
+        } catch (_) {}
+      }
+
+      if (!loaded && isBlobOrAbout) {
+        try {
+          const res = await fetch('https://castleradio.github.io/repro/canciones.json');
+          if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              TRACKS = data;
+              loaded = true;
+            }
+          }
+        } catch (_) {}
+      }
+
+      if (!loaded) {
+        TRACKS = [...FALLBACK_TRACKS];
+      }
+
+      TRACKS = enrichTracksWithAlbums(TRACKS);
+      renderCatalog();
+    }
+    loadCatalog();
+
+    function getRandomTrack() {
+      if (TRACKS.length === 0) return null;
+      let next;
+      do {
+        next = TRACKS[Math.floor(Math.random() * TRACKS.length)];
+      } while (TRACKS.length > 1 && currentTrack && next.id === currentTrack.id);
+      return next;
+    }
+
+    function fetchOfficialCover(songTitle) {
+      const cleanTitle = songTitle.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+      
+      if (coverCache[cleanTitle]) {
+        coverImg.src = coverCache[cleanTitle];
+        if (albumCache[cleanTitle] && currentTrack) {
+          trackArtist.textContent = `${albumCache[cleanTitle]} • ${currentTrack.artist || 'Stray Kids'}`;
+        }
+        return;
+      }
+
+      const query = encodeURIComponent(`Stray Kids ${cleanTitle}`);
+      fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=1`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.results && data.results.length > 0) {
+            const item = data.results[0];
+            const hiresCover = item.artworkUrl100.replace('100x100bb', '600x600bb');
+            coverCache[cleanTitle] = hiresCover;
+            coverImg.src = hiresCover;
+
+            // Extraer y mostrar el nombre oficial del álbum (ej: ATE, 5-STAR, ROCK-STAR, NOEASY)
+            if (item.collectionName) {
+              albumCache[cleanTitle] = item.collectionName;
+              if (currentTrack && currentTrack.title === songTitle) {
+                trackArtist.textContent = `${item.collectionName} • ${currentTrack.artist || 'Stray Kids'}`;
+              }
+            }
+          } else {
+            coverImg.src = DEFAULT_SVG_COVER;
+          }
+        })
+        .catch(() => {
+          coverImg.src = DEFAULT_SVG_COVER;
+        });
+    }
+
+    function playTrack(track, isFromQueue = false) {
+      initAudioContext();
+
+      if (currentTrack) history.push(currentTrack);
+      currentTrack = track;
+
+      let fileName = track.file.replace(/^audio[\\\/]/, '');
+      let audioBase = 'audio/';
+      
+      if (window.location.protocol === 'blob:' || window.location.protocol === 'about:') {
+        audioBase = 'https://castleradio.github.io/repro/audio/';
+      }
+
+      audio.src = audioBase + encodeURIComponent(fileName);
+
+      updateTitleMarquee(track.title);
+
+      // Si ya tenemos el álbum oficial en caché lo usamos; si no, muestra el inicial mientras consulta
+      const cleanTitle = track.title.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
+      const currentAlbum = albumCache[cleanTitle] || track.album || 'Stray Kids';
+      trackArtist.textContent = `${currentAlbum} • ${track.artist || 'Stray Kids'}`;
+
+      if (isFromQueue) {
+        modeIndicator.textContent = "⚡ PETICIÓN PRIORITARIA";
+        modeIndicator.style.color = "var(--skz-crimson)";
+      } else {
+        modeIndicator.textContent = "AUTO-RADIO ALEATORIO";
+        modeIndicator.style.color = "var(--accent-cyan)";
+      }
+
+      fetchOfficialCover(track.title);
+
+      audio.play().then(() => {
+        setPlaying(true);
+      }).catch(err => {
+        console.warn("Reproducción en espera:", err);
+      });
+
+      renderQueue();
+    }
+
+    function playNext() {
+      if (queue.length > 0) {
+        const nextInLine = queue.shift();
+        playTrack(nextInLine, true);
+      } else {
+        const nextSong = getRandomTrack();
+        if (nextSong) playTrack(nextSong, false);
+      }
+    }
+
+    window.requestSong = function(id) {
+      const song = TRACKS.find(t => t.id === id);
+      if (!song) return;
+
+      if (!currentTrack || audio.paused) {
+        playTrack(song, true);
+        closeSongsDrawer();
+      } else {
+        queue.push(song);
+        renderQueue();
+      }
+    };
+
+    function setPlaying(playing) {
+      isPlaying = playing;
+      if (playing) {
+        playerDeck.classList.add("is-playing");
+        playIcon.innerHTML = `<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>`;
+        startEqualizer();
+      } else {
+        playerDeck.classList.remove("is-playing");
+        playIcon.innerHTML = `<path d="M8 5v14l11-7z"/>`;
+        stopEqualizer();
+      }
+    }
+
+    btnPlay.addEventListener("click", () => {
+      initAudioContext();
+      if (!currentTrack) {
+        playNext();
+      } else if (audio.paused) {
+        audio.play();
+        setPlaying(true);
+      } else {
+        audio.pause();
+        setPlaying(false);
+      }
+    });
+
+    btnNext.addEventListener("click", () => {
+      initAudioContext();
+      playNext();
+    });
+
+    btnPrev.addEventListener("click", () => {
+      initAudioContext();
+      if (history.length > 0) {
+        const prev = history.pop();
+        playTrack(prev, false);
+      }
+    });
+
+    audio.addEventListener("ended", playNext);
+
+    function openSongsDrawer() {
+      libraryPanel.classList.add("drawer-open");
+    }
+
+    function closeSongsDrawer() {
+      libraryPanel.classList.remove("drawer-open");
+    }
+
+    btnOpenSongs.addEventListener("click", openSongsDrawer);
+    btnCloseDrawer.addEventListener("click", closeSongsDrawer);
+
+    function updateProgressUI(currentTime, duration) {
+      if (!isNaN(duration) && duration > 0) {
+        const pct = (currentTime / duration) * 100;
+        progressFill.style.width = `${pct}%`;
+        labelCurrent.textContent = formatTime(currentTime);
+        labelTotal.textContent = formatTime(duration);
+      }
+    }
+
+    audio.addEventListener("timeupdate", () => {
+      if (!isDragging) {
+        updateProgressUI(audio.currentTime, audio.duration);
+      }
+    });
+
+    function seekFromEvent(e) {
+      const rect = progressTrack.getBoundingClientRect();
+      const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+      if (!isNaN(audio.duration)) {
+        const targetTime = pos * audio.duration;
+        updateProgressUI(targetTime, audio.duration);
+        return targetTime;
+      }
+      return 0;
+    }
+
+    progressTrack.addEventListener("pointerdown", (e) => {
+      isDragging = true;
+      progressTrack.classList.add("is-dragging");
+      progressTrack.setPointerCapture(e.pointerId);
+      const targetTime = seekFromEvent(e);
+      audio.currentTime = targetTime;
+    });
+
+    progressTrack.addEventListener("pointermove", (e) => {
+      if (isDragging) {
+        const targetTime = seekFromEvent(e);
+        audio.currentTime = targetTime;
+      }
+    });
+
+    function stopDragging(e) {
+      if (isDragging) {
+        isDragging = false;
+        progressTrack.classList.remove("is-dragging");
+        try {
+          progressTrack.releasePointerCapture(e.pointerId);
+        } catch (_) {}
+      }
+    }
+
+    progressTrack.addEventListener("pointerup", stopDragging);
+    progressTrack.addEventListener("pointercancel", stopDragging);
+
+    function updateVolumeVisual(val) {
+      audio.volume = val;
+      const pct = Math.round(val * 100);
+      volumeControl.style.background = `linear-gradient(to right, var(--skz-crimson) ${pct}%, rgba(255, 255, 255, 0.1) ${pct}%)`;
+    }
+
+    updateVolumeVisual(1);
+
+    volumeControl.addEventListener("input", (e) => {
+      updateVolumeVisual(parseFloat(e.target.value));
+    });
+
+    volMuteBtn.addEventListener("click", () => {
+      volumeControl.value = 0;
+      updateVolumeVisual(0);
+    });
+
+    volMaxBtn.addEventListener("click", () => {
+      volumeControl.value = 1;
+      updateVolumeVisual(1);
+    });
+
+    function formatTime(s) {
+      const mins = Math.floor(s / 60) || 0;
+      const secs = Math.floor(s % 60) || 0;
+      return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+    }
+
+    tabCatalog.addEventListener("click", () => {
+      tabCatalog.classList.add("active");
+      tabQueue.classList.remove("active");
+      catalogView.style.display = "flex";
+      queueView.style.display = "none";
+      searchField.parentElement.style.display = "flex";
+    });
+
+    tabQueue.addEventListener("click", () => {
+      tabQueue.classList.add("active");
+      tabCatalog.classList.remove("active");
+      queueView.style.display = "flex";
+      catalogView.style.display = "none";
+      searchField.parentElement.style.display = "none";
+    });
+
+    function renderCatalog(filter = "") {
+      catalogView.innerHTML = "";
+      const q = filter.toLowerCase().trim();
+      const filtered = TRACKS.filter(t => t.title.toLowerCase().includes(q) || (t.album && t.album.toLowerCase().includes(q)));
+
+      filtered.forEach((t, idx) => {
+        const li = document.createElement("li");
+        li.className = "track-row";
+        li.innerHTML = `
+          <div class="row-main">
+            <span class="row-index">${(idx + 1).toString().padStart(2, '0')}</span>
+            <div class="row-details">
+              <div class="row-name">${t.title}</div>
+              <div class="row-sub">${t.album || 'Stray Kids'} • ${t.artist || 'Stray Kids'}</div>
+            </div>
+          </div>
+          <button class="btn-add-queue" onclick="requestSong(${t.id})">+ PEDIR</button>
+        `;
+        catalogView.appendChild(li);
+      });
+    }
+
+    function renderQueue() {
+      queueBadge.textContent = queue.length;
+      queueView.innerHTML = "";
+
+      if (queue.length === 0) {
+        queueView.innerHTML = `
+          <li style="text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 13px;">
+            No hay canciones en cola.<br>Sonando en modo Auto-Radio aleatorio.
+          </li>
+        `;
+        return;
+      }
+
+      queue.forEach((t, idx) => {
+        const li = document.createElement("li");
+        li.className = "track-row";
+        li.innerHTML = `
+          <div class="row-main">
+            <span class="row-index" style="color: var(--skz-crimson)">#${idx + 1}</span>
+            <div class="row-details">
+              <div class="row-name">${t.title}</div>
+              <div class="row-sub">${t.album || 'Stray Kids'}</div>
+            </div>
+          </div>
+          <span style="font-size: 11px; font-weight: 700; color: var(--skz-crimson); padding-right: 6px;">EN TURNO</span>
+        `;
+        queueView.appendChild(li);
+      });
+    }
+
+    searchField.addEventListener("input", (e) => {
+      const val = e.target.value;
+      btnClearSearch.style.display = val.length > 0 ? "flex" : "none";
+      renderCatalog(val);
+    });
+
+    btnClearSearch.addEventListener("click", () => {
+      searchField.value = "";
+      btnClearSearch.style.display = "none";
+      searchField.focus();
+      renderCatalog("");
+    });
+  </script>
+</body>
+</html>
