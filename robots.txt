@@ -1,0 +1,4 @@
+# STREAMING_CHUNK:Configuring crawler directives and blocking media directories...
+User-agent: *
+Disallow: /audio/
+Disallow: /canciones.json
