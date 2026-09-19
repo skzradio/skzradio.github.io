@@ -4,7 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>SKZ RADIO</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23181b28'/%3E%3Cstop offset='100%25' stop-color='%2308090d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23bg)' stroke='%23ff003c' stroke-width='4'/%3E%3Ctext x='32' y='42' font-family='system-ui, -apple-system, sans-serif' font-weight='900' font-size='23' fill='%23ffffff' text-anchor='middle' letter-spacing='1.5'%3ESKZ%3C/text%3E%3Ccircle cx='51' cy='15' r='3.5' fill='%2300f0ff'/%3E%3C/svg%3E">
+
+  <!-- PWA & Mobile Web App Meta Tags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#08090d">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SKZ RADIO">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -109,6 +119,34 @@
       .brand-name { 
         font-size: 18px; 
       }
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-install-app {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 240, 255, 0.12);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      color: var(--accent-cyan);
+      padding: 4px 10px;
+      border-radius: 14px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-install-app:active {
+      transform: scale(0.94);
+      background: var(--accent-cyan);
+      color: #08090d;
     }
 
     .live-status {
@@ -431,7 +469,6 @@
       font-variant-numeric: tabular-nums;
     }
 
-    /* FILA DE CONTROLES: 4 BOTONES EXACTOS SIN DESBORDAMIENTO */
     .playback-controls {
       display: flex;
       align-items: center;
@@ -486,7 +523,6 @@
       transform: scale(0.94);
     }
 
-    /* BOTÓN CANCIONES FLUIDO */
     .btn-open-catalog {
       background: rgba(255, 0, 60, 0.16);
       border: 1px solid rgba(255, 0, 60, 0.45);
@@ -879,8 +915,15 @@
       </svg>
       <div class="brand-name">RADIO</div>
     </div>
-    <div class="live-status">
-      <div class="pulse-dot"></div> EN VIVO
+    
+    <div class="header-actions">
+      <button class="btn-install-app" id="btnInstallApp" title="Instalar Aplicación">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+        <span>INSTALAR</span>
+      </button>
+      <div class="live-status">
+        <div class="pulse-dot"></div> EN VIVO
+      </div>
     </div>
   </header>
 
@@ -930,7 +973,6 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
           </button>
 
-          <!-- BOTÓN CANCIONES AL LADO DE AVANZAR -->
           <button class="btn-open-catalog" id="btnOpenSongs" title="Abrir catálogo de canciones" aria-label="Abrir catálogo">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
             <span>CANCIONES</span>
@@ -1409,6 +1451,7 @@
     const volumeControl = document.getElementById("volumeControl");
     const volMuteBtn = document.getElementById("volMuteBtn");
     const volMaxBtn = document.getElementById("volMaxBtn");
+    const btnInstallApp = document.getElementById("btnInstallApp");
 
     const tabCatalog = document.getElementById("tabCatalog");
     const tabQueue = document.getElementById("tabQueue");
@@ -1458,16 +1501,13 @@
       eqLogicalWidth = rect.width;
       eqLogicalHeight = rect.height;
 
-      // Escalar al pixel ratio de la pantalla (limitado a 2x para evitar sobrecarga en gama baja)
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.round(eqLogicalWidth * dpr);
       canvas.height = Math.round(eqLogicalHeight * dpr);
 
-      // Normalizar contexto a coordenadas CSS para nitidez absoluta sin bordes borrosos
       ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.scale(dpr, dpr);
 
-      // Reutilizar un único degradado vertical precalculado (no crear miles por segundo)
       cachedBarGradient = ctx.createLinearGradient(0, eqLogicalHeight, 0, 0);
       cachedBarGradient.addColorStop(0, "#ff003c");
       cachedBarGradient.addColorStop(0.55, "#ff2a6d");
@@ -1547,7 +1587,6 @@
       const barWidth = Math.max(2, Math.floor((eqLogicalWidth - (NUM_BARS - 1) * barSpacing) / NUM_BARS));
       const H = eqLogicalHeight;
 
-      // 1. Dibujar todas las barras con el degradado en un solo pase de estilo
       ctx.fillStyle = cachedBarGradient || "#ff003c";
       for (let i = 0; i < NUM_BARS; i++) {
         const val = dataArray[precomputedBins[i]] || 0;
@@ -1568,7 +1607,6 @@
         }
       }
 
-      // 2. Dibujar los topes de pico en un solo pase secundario
       ctx.fillStyle = "#ffffff";
       for (let i = 0; i < NUM_BARS; i++) {
         if (peaks[i] > 5) {
@@ -1653,12 +1691,10 @@
     function replenishDeck() {
       if (TRACKS.length === 0) return [];
       const deck = [...TRACKS];
-      // Algoritmo Fisher-Yates para barajado real de radio
       for (let i = deck.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [deck[i], deck[j]] = [deck[j], deck[i]];
       }
-      // Evitar que la primera del nuevo ciclo coincida con la última canción reproducida
       if (currentTrack && deck.length > 1 && deck[deck.length - 1].id === currentTrack.id) {
         const swapIdx = Math.floor(Math.random() * (deck.length - 1));
         [deck[deck.length - 1], deck[swapIdx]] = [deck[swapIdx], deck[deck.length - 1]];
@@ -1687,7 +1723,6 @@
       }
 
       try {
-        // Buscar con hasta 8 resultados para filtrar estrictamente que el artista sea Stray Kids
         const query = encodeURIComponent(`Stray Kids ${cleanTitle}`);
         const res = await fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=8`);
         const data = await res.json();
@@ -1701,7 +1736,6 @@
           match = (data.results || []).find(r => (r.artistName || "").toLowerCase().includes("stray kids"));
         }
 
-        // Si la canción es un b-side o solo de Stray Kids, buscar la carátula oficial por nombre de álbum
         if (!match && cleanAlbum && cleanAlbum !== 'SKZ Collection') {
           const albumQuery = encodeURIComponent(`Stray Kids ${cleanAlbum}`);
           const aRes = await fetch(`https://itunes.apple.com/search?term=${albumQuery}&media=music&entity=album&limit=4`);
@@ -1745,7 +1779,6 @@
 
       updateTitleMarquee(track.title);
 
-      // El mapa oficial verificado ALBUM_MAP siempre tiene prioridad sobre coincidencias ambiguas externas
       const cleanTitle = track.title.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
       const currentAlbum = ALBUM_MAP[cleanTitle.toLowerCase()] || track.album || albumCache[cleanTitle] || 'Stray Kids';
       trackArtist.textContent = `${currentAlbum} • ${track.artist || 'Stray Kids'}`;
@@ -1948,27 +1981,22 @@
       const title = (track.title || "").toLowerCase().trim();
       const album = (track.album || "").toLowerCase().trim();
 
-      // Coincidencia exacta
       if (title === q) return 100;
 
-      // El título comienza por la búsqueda (ej: "my" -> "My Name", "My Pace")
       if (title.startsWith(q)) {
         return 80 - Math.min(title.length - q.length, 25);
       }
 
-      // Una palabra dentro del título comienza por la búsqueda (ej: "Hold My Hand")
       const words = title.split(/[\s\-_\(\)\/]+/);
       const wordIndex = words.findIndex(w => w.startsWith(q));
       if (wordIndex !== -1) {
         return 60 - Math.min(wordIndex * 3, 20);
       }
 
-      // Subcadena dentro del título
       if (title.includes(q)) {
         return 40 - Math.min(title.indexOf(q), 20);
       }
 
-      // El álbum comienza por la búsqueda
       if (album.startsWith(q)) return 25;
       if (album.includes(q)) return 15;
 
@@ -2052,6 +2080,46 @@
       searchField.focus();
       renderCatalog("");
     });
+
+    // ----------------------------------------------------
+    // REGISTRO DE SERVICE WORKER & PROMPT DE INSTALACIÓN PWA
+    // ----------------------------------------------------
+    let deferredPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      if (btnInstallApp) {
+        btnInstallApp.style.display = 'inline-flex';
+      }
+    });
+
+    if (btnInstallApp) {
+      btnInstallApp.addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          btnInstallApp.style.display = 'none';
+        }
+        deferredPrompt = null;
+      });
+    }
+
+    window.addEventListener('appinstalled', () => {
+      if (btnInstallApp) {
+        btnInstallApp.style.display = 'none';
+      }
+      deferredPrompt = null;
+    });
+
+    if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.warn('Registro de Service Worker omitido:', err);
+        });
+      });
+    }
   </script>
 </body>
 </html>
