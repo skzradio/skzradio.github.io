@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "#Lovestay",
+    "title": "Lovestay",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
     "file": "audio/LoveSTAY.mp3",
@@ -33,6 +33,22 @@
   },
   {
     "id": 5,
+    "title": "24 To 25",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/24 to 25.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 6,
+    "title": "3Racha (Bang Chan, Changbin, Han)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/3RACHA (Bang Chan, Changbin, HAN).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 7,
     "title": "3Rd Eye",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -40,7 +56,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 6,
+    "id": 8,
+    "title": "4419",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/4419.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 9,
+    "title": "All In",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/ALL IN.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 10,
     "title": "After You",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -48,7 +80,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 7,
+    "id": 11,
     "title": "Airplane",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -56,7 +88,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 8,
+    "id": 12,
     "title": "Aiwokuretanoninaze",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -64,7 +96,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 9,
+    "id": 13,
     "title": "Alien (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -72,7 +104,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 10,
+    "id": 14,
     "title": "Another Day",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -80,7 +112,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 11,
+    "id": 15,
     "title": "Any",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -88,7 +120,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 12,
+    "id": 16,
     "title": "As We Are (Seungmin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -96,7 +128,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 13,
+    "id": 17,
     "title": "Astronaut",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -104,7 +136,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 14,
+    "id": 18,
     "title": "Awaken",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -112,7 +144,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 15,
+    "id": 19,
     "title": "Awkward Silence",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -120,7 +152,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 16,
+    "id": 20,
     "title": "B Me",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -128,7 +160,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 17,
+    "id": 21,
     "title": "Baby",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -136,7 +168,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 18,
+    "id": 22,
     "title": "Beware",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -144,7 +176,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 19,
+    "id": 23,
     "title": "Bleep",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -152,7 +184,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 20,
+    "id": 24,
+    "title": "Blind Spot",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/BLIND SPOT.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 25,
+    "title": "Back Door (Japanese Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Back Door (Japanese version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 26,
     "title": "Back Door",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -160,7 +208,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 21,
+    "id": 27,
     "title": "Back Then",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -168,7 +216,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 22,
+    "id": 28,
     "title": "Battle Ground (Korean Version)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -176,7 +224,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 23,
+    "id": 29,
     "title": "Battle Ground",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -184,7 +232,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 24,
+    "id": 30,
     "title": "Because (Changbin, Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -192,7 +240,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 25,
+    "id": 31,
     "title": "Behind The Light",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -200,7 +248,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 26,
+    "id": 32,
     "title": "Blueprint",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -208,7 +256,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 27,
+    "id": 33,
+    "title": "Booster",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Booster.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 34,
     "title": "Bounce Back",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -216,7 +272,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 28,
+    "id": 35,
     "title": "Boxer",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -224,7 +280,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 29,
+    "id": 36,
     "title": "Broken Compass",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -232,7 +288,31 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 30,
+    "id": 37,
+    "title": "Burnin’ Tires (Changbin & I.N)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Burnin’ Tires (Changbin & I.N).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 38,
+    "title": "Butterflies (Instrumental)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Butterflies (Instrumental).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 39,
+    "title": "Butterflies",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Butterflies.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 40,
     "title": "Case 143  Japanese Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -240,7 +320,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 31,
+    "id": 41,
+    "title": "Case 143",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/CASE 143.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 42,
     "title": "Ceremony (English Version)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -248,7 +336,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 32,
+    "id": 43,
     "title": "Ceremony (Festival Version)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -256,7 +344,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 33,
+    "id": 44,
     "title": "Ceremony",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -264,7 +352,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 34,
+    "id": 45,
     "title": "Cheese",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -272,7 +360,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 35,
+    "id": 46,
     "title": "Chill  Japanese Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -280,7 +368,47 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 36,
+    "id": 47,
+    "title": "Chill",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/CHILL.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 48,
+    "title": "Cinema (Lee Know & Seungmin)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/CINEMA (Lee Know & Seungmin).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 49,
+    "title": "Circus (Korean Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/CIRCUS (Korean Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 50,
+    "title": "Circus",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/CIRCUS.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 51,
+    "title": "Comflex",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/COMFLEX.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 52,
     "title": "Creed",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -288,7 +416,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 37,
+    "id": 53,
+    "title": "Can'T Stop (Seungmin, I.N)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Can't Stop (Seungmin, I.N).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 54,
     "title": "Charmer",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -296,7 +432,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 38,
+    "id": 55,
+    "title": "Chk Chk Boom (Festival Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Chk Chk Boom (Festival Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 56,
     "title": "Chk Chk Boom  Japanese Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -304,7 +448,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 39,
+    "id": 57,
+    "title": "Chk Chk Boom",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Chk Chk Boom.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 58,
+    "title": "Christmas Evel",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Christmas EveL.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 59,
     "title": "Christmas Love",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -312,7 +472,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 40,
+    "id": 60,
     "title": "Chronosaurus",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -320,7 +480,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 41,
+    "id": 61,
     "title": "Close (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -328,7 +488,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 42,
+    "id": 62,
     "title": "Collision",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -336,7 +496,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 43,
+    "id": 63,
     "title": "Connected (Bang Chan)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -344,7 +504,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 44,
+    "id": 64,
+    "title": "Cover Me",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Cover Me.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 65,
+    "title": "Divine",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/DIVINE.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 66,
     "title": "Dlc",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -352,7 +528,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 45,
+    "id": 67,
     "title": "Dlmlu",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -360,7 +536,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 46,
+    "id": 68,
+    "title": "Domino (English Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/DOMINO (English Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 69,
     "title": "Domino",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -368,7 +552,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 47,
+    "id": 70,
     "title": "Doodle (Changbin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -376,7 +560,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 48,
+    "id": 71,
     "title": "Deep End (Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -384,7 +568,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 49,
+    "id": 72,
     "title": "District 9",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -392,7 +576,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 50,
+    "id": 73,
+    "title": "Do It (Festival Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Do It (Festival Version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 74,
+    "title": "Do It",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Do It.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 75,
     "title": "Don’T Say",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -400,7 +600,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 51,
+    "id": 76,
     "title": "Double Knot",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -408,7 +608,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 52,
+    "id": 77,
     "title": "Drive (Bang Chan, Lee Know)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -416,7 +616,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 53,
+    "id": 78,
+    "title": "Escape (Bang Chan & Hyunjin)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/ESCAPE (Bang Chan & Hyunjin).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 79,
     "title": "Easy",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -424,7 +632,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 54,
+    "id": 80,
+    "title": "Entrance",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Entrance.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 81,
     "title": "Ex",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -432,7 +648,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 55,
+    "id": 82,
     "title": "Fam (Korean Ver.)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -440,7 +656,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 56,
+    "id": 83,
+    "title": "Fam",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/FAM.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 84,
     "title": "Farming",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -448,7 +672,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 57,
+    "id": 85,
+    "title": "Fate",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/FATE.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 86,
     "title": "Fnf",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -456,7 +688,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 58,
+    "id": 87,
     "title": "Freeze",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -464,7 +696,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 59,
+    "id": 88,
+    "title": "Fairytale",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Fairytale.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 89,
     "title": "Falling Up  English Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -472,7 +712,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 60,
+    "id": 90,
     "title": "Falling Up",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -480,7 +720,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 61,
+    "id": 91,
     "title": "For You",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -488,7 +728,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 62,
+    "id": 92,
     "title": "Get Lit",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -496,7 +736,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 63,
+    "id": 93,
+    "title": "Giant (Korean Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/GIANT (Korean Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 94,
     "title": "Giant",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -504,7 +752,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 64,
+    "id": 95,
+    "title": "Glow",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/GLOW.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 96,
     "title": "Go Live",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -512,7 +768,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 65,
+    "id": 97,
     "title": "Get Cool",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -520,7 +776,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 66,
+    "id": 98,
     "title": "Ghost",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -528,7 +784,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 67,
+    "id": 99,
+    "title": "Give Me Your Tmi",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Give Me Your TMI.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 100,
+    "title": "God'S Menu (Japanese Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/God's Menu (Japanese version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 101,
     "title": "God’S Menu",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -536,7 +808,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 68,
+    "id": 102,
     "title": "Gone Away (Han, Seungmin, I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -544,7 +816,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 69,
+    "id": 103,
     "title": "Goodbye",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -552,7 +824,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 70,
+    "id": 104,
     "title": "Grow Up",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -560,7 +832,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 71,
+    "id": 105,
     "title": "Hallucination (I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -568,7 +840,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 72,
+    "id": 106,
     "title": "Happy (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -576,7 +848,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 73,
+    "id": 107,
     "title": "Half Time",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -584,7 +856,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 74,
+    "id": 108,
     "title": "Hall Of Fame",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -592,7 +864,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 75,
+    "id": 109,
     "title": "Haven",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -600,7 +872,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 76,
+    "id": 110,
     "title": "Hellevator",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -608,7 +880,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 77,
+    "id": 111,
+    "title": "Hero'S Soup",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Hero's Soup.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 112,
     "title": "Hold My Hand (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -616,7 +896,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 78,
+    "id": 113,
+    "title": "Holiday",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Holiday.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 114,
+    "title": "Hollow",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Hollow.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 115,
     "title": "Hoodie Season",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -624,7 +920,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 79,
+    "id": 116,
     "title": "Hug Me (I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -632,7 +928,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 80,
+    "id": 117,
     "title": "Hug Me (Live)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -640,7 +936,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 81,
+    "id": 118,
     "title": "I Do",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -648,7 +944,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 82,
+    "id": 119,
     "title": "I Got It (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -656,7 +952,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 83,
+    "id": 120,
+    "title": "I Like It",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/I Like It.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 121,
     "title": "I Am You",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -664,7 +968,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 84,
+    "id": 122,
     "title": "Item",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -672,7 +976,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 85,
+    "id": 123,
     "title": "In My Head",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -680,7 +984,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 86,
+    "id": 124,
     "title": "Insomnia",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -688,7 +992,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 87,
+    "id": 125,
     "title": "Into The Current",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -696,7 +1000,31 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 88,
+    "id": 126,
+    "title": "Jjam",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/JJAM.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 127,
+    "title": "Lalalala (Rock Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/LALALALA (Rock Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 128,
+    "title": "Lalalala",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/LALALALA.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 129,
     "title": "Lover",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -704,7 +1032,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 89,
+    "id": 130,
+    "title": "Leave",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Leave.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 131,
     "title": "Levanter",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -712,7 +1048,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 90,
+    "id": 132,
     "title": "Limbo (Lee Know)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -720,7 +1056,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 91,
+    "id": 133,
     "title": "Limbo (Live)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -728,7 +1064,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 92,
+    "id": 134,
     "title": "Lonely St",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -736,7 +1072,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 93,
+    "id": 135,
     "title": "Lost Me",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -744,7 +1080,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 94,
+    "id": 136,
     "title": "Love Untold (Hyunjin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -752,7 +1088,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 95,
+    "id": 137,
     "title": "M.I.A",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -760,7 +1096,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 96,
+    "id": 138,
+    "title": "Maniac  Japanese Version ",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/MANIAC -Japanese version-.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 139,
     "title": "Maniac",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -768,7 +1112,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 97,
+    "id": 140,
+    "title": "Megaverse",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/MEGAVERSE.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 141,
     "title": "Mess",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -776,7 +1128,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 98,
+    "id": 142,
     "title": "Mic&Brush",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -784,7 +1136,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 99,
+    "id": 143,
     "title": "Miroh",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -792,7 +1144,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 100,
+    "id": 144,
+    "title": "Mountains",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/MOUNTAINS.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 145,
     "title": "Maknae On Top (I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -800,7 +1160,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 101,
+    "id": 146,
     "title": "Maze Of Memories",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -808,7 +1168,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 102,
+    "id": 147,
     "title": "Mirror",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -816,7 +1176,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 103,
+    "id": 148,
     "title": "Mixtape   Gone Days",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -824,7 +1184,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 104,
+    "id": 149,
     "title": "Mixtape   Oh",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -832,7 +1192,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 105,
+    "id": 150,
     "title": "Mixtape   On Track",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -840,7 +1200,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 106,
+    "id": 151,
     "title": "Mixtape   Time Out",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -848,7 +1208,39 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 107,
+    "id": 152,
+    "title": "Mixtape#1",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Mixtape#1.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 153,
+    "title": "Mixtape#2",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Mixtape#2.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 154,
+    "title": "Mixtape#3",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Mixtape#3.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 155,
+    "title": "Mixtape#4",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Mixtape#4.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 156,
     "title": "Muddy Water (Changbin, Hyunjin, Han, Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -856,7 +1248,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 108,
+    "id": 157,
     "title": "My Name",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -864,7 +1256,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 109,
+    "id": 158,
     "title": "My Pace",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -872,7 +1264,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 110,
+    "id": 159,
     "title": "My Side",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -880,7 +1272,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 111,
+    "id": 160,
     "title": "My Universe (Seungmin, I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -888,7 +1280,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 112,
+    "id": 161,
     "title": "Night  English Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -896,7 +1288,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 113,
+    "id": 162,
     "title": "Night",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -904,7 +1296,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 114,
+    "id": 163,
+    "title": "Not!",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/NOT!.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 164,
     "title": "N S",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -912,7 +1312,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 115,
+    "id": 165,
+    "title": "Never Alone",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Never Alone.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 166,
     "title": "Novel",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -920,7 +1328,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 116,
+    "id": 167,
+    "title": "One Day",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/One Day.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 168,
     "title": "Perfume",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -928,7 +1344,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 117,
+    "id": 169,
     "title": "Pacemaker",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -936,7 +1352,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 118,
+    "id": 170,
+    "title": "Parade",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Parade.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 171,
     "title": "Phobia",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -944,7 +1368,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 119,
+    "id": 172,
     "title": "Phoenix",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -952,7 +1376,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 120,
+    "id": 173,
+    "title": "Photobook",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Photobook.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 174,
     "title": "Piece Of A Puzzle (Changbin, Seungmin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -960,7 +1392,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 121,
+    "id": 175,
     "title": "Placebo",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -968,7 +1400,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 122,
+    "id": 176,
     "title": "Question",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -976,7 +1408,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 123,
+    "id": 177,
     "title": "Rev It Up",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -984,7 +1416,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 124,
+    "id": 178,
     "title": "Rock",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -992,7 +1424,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 125,
+    "id": 179,
     "title": "Run (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1000,7 +1432,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 126,
+    "id": 180,
     "title": "Run It",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1008,7 +1440,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 127,
+    "id": 181,
     "title": "Railway (Bang Chan)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1016,7 +1448,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 128,
+    "id": 182,
     "title": "Raining Stars",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1024,7 +1456,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 129,
+    "id": 183,
     "title": "Red Lights (Bang Chan, Hyunjin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1032,7 +1464,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 130,
+    "id": 184,
+    "title": "Road Not Taken",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Road Not Taken.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 185,
     "title": "Roman Empire",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1040,7 +1480,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 131,
+    "id": 186,
+    "title": "Runners",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Runners.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 187,
     "title": "S Class",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1048,7 +1496,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 132,
+    "id": 188,
+    "title": "Slump (Japanese Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/SLUMP (Japanese version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 189,
     "title": "Slump ( Tower Of God  Ed)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1056,7 +1512,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 133,
+    "id": 190,
     "title": "Ssick",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1064,7 +1520,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 134,
+    "id": 191,
     "title": "Stay",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1072,7 +1528,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 135,
+    "id": 192,
+    "title": "Stop",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/STOP.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 193,
+    "title": "Super Board",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/SUPER BOARD.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 194,
     "title": "Saiyan",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1080,7 +1552,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 136,
+    "id": 195,
     "title": "Scars (Korean Ver.)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1088,7 +1560,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 137,
+    "id": 196,
     "title": "Scars",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1096,7 +1568,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 138,
+    "id": 197,
+    "title": "School Life",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/School Life.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 198,
     "title": "Secret Secret",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1104,7 +1584,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 139,
+    "id": 199,
     "title": "Side Effects",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1112,7 +1592,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 140,
+    "id": 200,
+    "title": "Silent Cry  Japanese Version ",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Silent Cry -Japanese version-.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 201,
     "title": "Silent Cry",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1120,7 +1608,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 141,
+    "id": 202,
     "title": "So Good (Hyunjin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1128,7 +1616,31 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 142,
+    "id": 203,
+    "title": "Social Path (Feat. Lisa) (Korean Ver.)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Social Path (Feat. LiSA) (Korean Ver.).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 204,
+    "title": "Social Path (Instrumental)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Social Path (Instrumental).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 205,
+    "title": "Social Path",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Social Path.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 206,
     "title": "Sorry, I Love You",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1136,7 +1648,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 143,
+    "id": 207,
     "title": "Spread My Wings",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1144,7 +1656,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 144,
+    "id": 208,
     "title": "Star Lost",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1152,7 +1664,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 145,
+    "id": 209,
     "title": "Stars And Raindrops (Seungmin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1160,7 +1672,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 146,
+    "id": 210,
     "title": "Still Here",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1168,7 +1680,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 147,
+    "id": 211,
+    "title": "Stray Kids",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Stray Kids.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 212,
     "title": "Streetlight (Changbin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1176,7 +1696,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 148,
+    "id": 213,
+    "title": "Sunshine",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Sunshine.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 214,
+    "title": "Super Bowl  Japanese Version ",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Super Bowl -Japanese version-.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 215,
     "title": "Super Bowl",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1184,7 +1720,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 149,
+    "id": 216,
     "title": "Surfin’ (Lee Know, Changbin, Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1192,7 +1728,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 150,
+    "id": 217,
     "title": "Ta",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1200,7 +1736,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 151,
+    "id": 218,
+    "title": "Taste (Lee Know, Hyunjin, Felix)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/TASTE (Lee Know, Hyunjin, Felix).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 219,
     "title": "The Sound (Korean Ver.)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1208,7 +1752,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 152,
+    "id": 220,
     "title": "The Sound",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1216,7 +1760,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 153,
+    "id": 221,
     "title": "Tmt",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1224,7 +1768,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 154,
+    "id": 222,
+    "title": "Top (Japanese Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/TOP (Japanese version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 223,
     "title": "Top ( Tower Of God  Op)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1232,7 +1784,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 155,
+    "id": 224,
     "title": "Topline (Feat. Tiger Jk)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1240,7 +1792,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 156,
+    "id": 225,
     "title": "The Little Things",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1248,7 +1800,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 157,
+    "id": 226,
     "title": "The Tortoise And The Hare",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1256,7 +1808,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 158,
+    "id": 227,
     "title": "The View",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1264,7 +1816,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 159,
+    "id": 228,
     "title": "There",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1272,7 +1824,23 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 160,
+    "id": 229,
+    "title": "This & That (Chill Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/This & That (Chill Version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 230,
+    "title": "This & That (Cool Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/This & That (Cool Version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 231,
     "title": "This & That (Festival Version)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1280,7 +1848,31 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 161,
+    "id": 232,
+    "title": "This & That (Instrumental)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/This & That (Instrumental).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 233,
+    "title": "This & That (That Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/This & That (That Version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 234,
+    "title": "This & That (This Version)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/This & That (This Version).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 235,
     "title": "This & That",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1288,7 +1880,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 162,
+    "id": 236,
     "title": "Thunderous  Japanese Version ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1296,7 +1888,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 163,
+    "id": 237,
     "title": "Thunderous",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1304,7 +1896,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 164,
+    "id": 238,
+    "title": "Truman (Han & Felix)",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Truman (HAN & Felix).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 239,
     "title": "U (Feat. Tablo)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1312,7 +1912,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 165,
+    "id": 240,
     "title": "Ultra (Changbin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1320,7 +1920,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 166,
+    "id": 241,
     "title": "Unfair (Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1328,7 +1928,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 167,
+    "id": 242,
     "title": "Up All Night (Bang Chan, Changbin, Felix, Seungmin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1336,7 +1936,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 168,
+    "id": 243,
+    "title": "Venom  Japanese Version ",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/VENOM -Japanese version-.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 244,
     "title": "Venom",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1344,7 +1952,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 169,
+    "id": 245,
     "title": "Victory Song",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1352,7 +1960,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 170,
+    "id": 246,
     "title": "Voices",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1360,7 +1968,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 171,
+    "id": 247,
+    "title": "Who ",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/WHO_.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 248,
     "title": "Why ",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1368,7 +1984,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 172,
+    "id": 249,
     "title": "Wolfgang",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1376,7 +1992,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 173,
+    "id": 250,
     "title": "Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1384,7 +2000,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 174,
+    "id": 251,
     "title": "Walkin On Water (Hip Ver.)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1392,7 +2008,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 175,
+    "id": 252,
     "title": "Walkin On Water",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1400,7 +2016,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 176,
+    "id": 253,
     "title": "Way Out",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1408,7 +2024,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 177,
+    "id": 254,
     "title": "We Go (Bang Chan, Changbin, Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1416,7 +2032,15 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 178,
+    "id": 255,
+    "title": "Winter Falls",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Winter Falls.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 256,
     "title": "Wish You Back (Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1424,7 +2048,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 179,
+    "id": 257,
     "title": "Wow (Lee Know, Hyunjin, Felix)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1432,7 +2056,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 180,
+    "id": 258,
     "title": "Yayaya",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1440,7 +2064,31 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 181,
+    "id": 259,
+    "title": "You",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/YOU.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 260,
+    "title": "You Can Stay",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/You Can STAY.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 261,
+    "title": "Your Eyes",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/Your Eyes.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 262,
     "title": "Youth (Lee Know)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1448,7 +2096,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 182,
+    "id": 263,
     "title": "Youtiful",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1456,7 +2104,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 183,
+    "id": 264,
     "title": "Zone (Bang Chan, Changbin, Han)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1464,7 +2112,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 184,
+    "id": 265,
     "title": "I Hate To Admit (Bang Chan)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1472,7 +2120,7 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 185,
+    "id": 266,
     "title": "Ice.Cream (Hyunjin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
@@ -1480,11 +2128,27 @@
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   },
   {
-    "id": 186,
+    "id": 267,
+    "title": "Just A Little",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/just a little.mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 268,
     "title": "Miss You (Hyunjin)",
     "artist": "Stray Kids",
     "album": "SKZ Collection",
     "file": "audio/miss you (Hyunjin).mp3",
+    "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": 269,
+    "title": "Twilight",
+    "artist": "Stray Kids",
+    "album": "SKZ Collection",
+    "file": "audio/twilight.mp3",
     "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=80"
   }
 ]
