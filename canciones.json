@@ -5,7 +5,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/LoveSTAY.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/0325.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/0801.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 4,
@@ -29,15 +29,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/19.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 5,
     "title": "24 to 25",
     "artist": "Stray Kids",
-    "album": "Christmas EveL - EP",
+    "album": "Christmas EveL",
     "file": "audio/24 to 25.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ba/1b/d9/ba1bd944-0e53-81b0-cd04-d4735b49e5f5/192641939525_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Christmas_EveL.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/3RACHA (Bang Chan, Changbin, HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 7,
@@ -53,31 +53,31 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/3rd Eye.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 8,
     "title": "4419",
     "artist": "Stray Kids",
-    "album": "Mixtape : Time Out - Single",
+    "album": "Mixtape",
     "file": "audio/4419.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3c/4f/67/3c4f671b-1b52-ce05-b618-a3d8054ff3c8/738676859928_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape.jpg"
   },
   {
     "id": 9,
     "title": "ALL IN",
     "artist": "Stray Kids",
-    "album": "GIANT",
+    "album": "ALL IN",
     "file": "audio/ALL IN.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 10,
     "title": "After You",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THIS & THAT",
     "file": "audio/After You.mp3",
-    "cover": ""
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 11,
@@ -85,15 +85,15 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Airplane.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 12,
     "title": "Aiwokuretanoninaze",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "GIANT",
     "file": "audio/Aiwokuretanoninaze.mp3",
-    "cover": ""
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Alien (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Another Day.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/Any.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 16,
@@ -125,15 +125,15 @@
     "artist": "Stray Kids",
     "album": "HOP",
     "file": "audio/As we are (Seungmin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 17,
     "title": "Astronaut",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/Astronaut.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Awaken.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Awkward Silence.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 20,
@@ -157,15 +157,15 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/B Me.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 21,
     "title": "BABY",
-    "artist": "Stray Kids",
+    "artist": "Bang Chan",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/BABY.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/BEWARE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/BLEEP.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 24,
@@ -189,15 +189,15 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/BLIND SPOT.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 25,
     "title": "Back Door (Japanese version)",
     "artist": "Stray Kids",
-    "album": "IN LIFE",
+    "album": "ALL IN",
     "file": "audio/Back Door (Japanese version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/Back Door.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 27,
@@ -213,31 +213,31 @@
     "artist": "Stray Kids",
     "album": "THIS & THAT",
     "file": "audio/Back Then.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/05/aa/c005aa79-a3a7-6e28-48e2-4c5e72eff603/8809928957357_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 28,
     "title": "Battle Ground (Korean Version)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Battle Ground (Korean Version).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 29,
     "title": "Battle Ground",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THE SOUND",
     "file": "audio/Battle Ground.mp3",
-    "cover": ""
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 30,
     "title": "Because (Changbin, Felix)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Because (Changbin, Felix).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 31,
@@ -245,15 +245,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Behind The Light.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 32,
     "title": "Blueprint",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "GO LIVE",
     "file": "audio/Blueprint.mp3",
-    "cover": ""
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 33,
@@ -261,15 +261,15 @@
     "artist": "Stray Kids",
     "album": "Clé : LEVANTER",
     "file": "audio/Booster.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/59/5b/c6/595bc697-c42f-7f17-a09d-9e0c6e87063e/738676860856_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl____LEVANTER.jpg"
   },
   {
     "id": 34,
     "title": "Bounce Back",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/Bounce Back.mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 35,
@@ -277,7 +277,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Boxer.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 36,
@@ -285,39 +285,39 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Broken Compass.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 37,
     "title": "Burnin’ Tires (Changbin & I.N)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Mixtape : dominATE",
     "file": "audio/Burnin’ Tires (Changbin & I.N).mp3",
-    "cover": ""
+    "cover": "covers/Mixtape___dominATE.jpg"
   },
   {
     "id": 38,
     "title": "Butterflies (Instrumental)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Social Path / Super Bowl -Japanese version-",
     "file": "audio/Butterflies (Instrumental).mp3",
-    "cover": ""
+    "cover": "covers/Social_Path___Super_Bowl_-Japanese_version-.jpg"
   },
   {
     "id": 39,
     "title": "Butterflies",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Social Path / Super Bowl -Japanese version-",
     "file": "audio/Butterflies.mp3",
-    "cover": ""
+    "cover": "covers/Social_Path___Super_Bowl_-Japanese_version-.jpg"
   },
   {
     "id": 40,
     "title": "CASE 143 -Japanese version-",
     "artist": "Stray Kids",
-    "album": "MAXIDENT",
+    "album": "THE SOUND",
     "file": "audio/CASE 143 -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 41,
@@ -325,7 +325,7 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/CASE 143.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 42,
@@ -333,7 +333,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/CEREMONY (English Version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 43,
@@ -341,7 +341,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/CEREMONY (Festival Version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 44,
@@ -349,7 +349,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/CEREMONY.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 45,
@@ -357,15 +357,15 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/CHEESE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 46,
     "title": "CHILL -Japanese version-",
     "artist": "Stray Kids",
-    "album": "MAXIDENT",
+    "album": "THE SOUND",
     "file": "audio/CHILL -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 47,
@@ -373,31 +373,31 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/CHILL.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 48,
     "title": "CINEMA (Lee Know & Seungmin)",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "Mixtape : dominATE",
     "file": "audio/CINEMA (Lee Know & Seungmin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape___dominATE.jpg"
   },
   {
     "id": 49,
     "title": "CIRCUS (Korean Ver.)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "MAXIDENT",
     "file": "audio/CIRCUS (Korean Ver.).mp3",
-    "cover": ""
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 50,
     "title": "CIRCUS",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "CIRCUS",
     "file": "audio/CIRCUS.mp3",
-    "cover": ""
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 51,
@@ -405,7 +405,7 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/COMFLEX.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 52,
@@ -413,7 +413,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/CREED.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 53,
@@ -421,7 +421,7 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/Can't Stop (Seungmin, I.N).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 54,
@@ -429,7 +429,7 @@
     "artist": "Stray Kids",
     "album": "ODDINARY",
     "file": "audio/Charmer.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 55,
@@ -437,15 +437,15 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/Chk Chk Boom (Festival Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 56,
     "title": "Chk Chk Boom -Japanese version-",
     "artist": "Stray Kids",
-    "album": "ATE",
+    "album": "GIANT",
     "file": "audio/Chk Chk Boom -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 57,
@@ -453,15 +453,15 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/Chk Chk Boom.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 58,
     "title": "Christmas EveL",
     "artist": "Stray Kids",
-    "album": "Christmas EveL - EP",
+    "album": "Christmas EveL",
     "file": "audio/Christmas EveL.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ba/1b/d9/ba1bd944-0e53-81b0-cd04-d4735b49e5f5/192641939525_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Christmas_EveL.jpg"
   },
   {
     "id": 59,
@@ -469,15 +469,15 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/Christmas Love.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 60,
     "title": "Chronosaurus",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/Chronosaurus.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 61,
@@ -485,7 +485,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Close (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 62,
@@ -493,7 +493,7 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/Collision.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 63,
@@ -501,7 +501,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Connected (Bang Chan).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 64,
@@ -509,15 +509,15 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/Cover Me.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 65,
     "title": "DIVINE",
     "artist": "Stray Kids",
-    "album": "DO IT - EP",
+    "album": "DO IT",
     "file": "audio/DIVINE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/33/69/7233691c-aefe-252d-678b-faa9b3455200/8809928958965_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/DO_IT.jpg"
   },
   {
     "id": 66,
@@ -525,23 +525,23 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/DLC.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 67,
     "title": "DLMLU",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THE SOUND",
     "file": "audio/DLMLU.mp3",
-    "cover": ""
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 68,
     "title": "DOMINO (English Ver.)",
     "artist": "Stray Kids",
-    "album": "NOEASY",
+    "album": "Christmas EveL",
     "file": "audio/DOMINO (English Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Christmas_EveL.jpg"
   },
   {
     "id": 69,
@@ -549,7 +549,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/DOMINO.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 70,
@@ -557,7 +557,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/DOODLE (Changbin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 71,
@@ -565,7 +565,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Deep end (Felix).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 72,
@@ -573,39 +573,39 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/District 9.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 73,
     "title": "Do It (Festival Version)",
     "artist": "Stray Kids",
-    "album": "DO IT - EP",
+    "album": "DO IT",
     "file": "audio/Do It (Festival Version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/33/69/7233691c-aefe-252d-678b-faa9b3455200/8809928958965_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/DO_IT.jpg"
   },
   {
     "id": 74,
     "title": "Do It",
     "artist": "Stray Kids",
-    "album": "DO IT - EP",
+    "album": "DO IT",
     "file": "audio/Do It.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/33/69/7233691c-aefe-252d-678b-faa9b3455200/8809928958965_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/DO_IT.jpg"
   },
   {
     "id": 75,
     "title": "Don’t Say",
-    "artist": "Stray Kids",
+    "artist": "HAN",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Don’t Say.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 76,
     "title": "Double Knot",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/Double Knot.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 77,
@@ -613,15 +613,15 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Drive (Bang Chan, Lee Know).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 78,
     "title": "ESCAPE (Bang Chan & Hyunjin)",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "Mixtape : dominATE",
     "file": "audio/ESCAPE (Bang Chan & Hyunjin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape___dominATE.jpg"
   },
   {
     "id": 79,
@@ -629,7 +629,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Easy.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 80,
@@ -637,7 +637,7 @@
     "artist": "Stray Kids",
     "album": "Clé 1 : MIROH",
     "file": "audio/Entrance.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b1/fc/c1/b1fcc187-2298-a18b-ee68-06b23c0eefa6/192641939365_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__1___MIROH.jpg"
   },
   {
     "id": 81,
@@ -645,23 +645,23 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/Ex.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 82,
     "title": "FAM (Korean Ver.)",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "SKZ-REPLAY",
     "file": "audio/FAM (Korean Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 83,
     "title": "FAM",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "ALL IN",
     "file": "audio/FAM.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 84,
@@ -669,15 +669,15 @@
     "artist": "Stray Kids",
     "album": "THIS & THAT",
     "file": "audio/FARMING.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/05/aa/c005aa79-a3a7-6e28-48e2-4c5e72eff603/8809928957357_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 85,
     "title": "FATE",
     "artist": "Stray Kids",
-    "album": "Hollow - EP",
+    "album": "Hollow",
     "file": "audio/FATE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/52/b1/c252b1ef-863a-ec99-98a2-74d98b9731f6/4547366755893.jpg/600x600bb.jpg"
+    "cover": "covers/Hollow.jpg"
   },
   {
     "id": 86,
@@ -685,7 +685,7 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/FNF.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 87,
@@ -693,39 +693,39 @@
     "artist": "Stray Kids",
     "album": "ODDINARY",
     "file": "audio/FREEZE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 88,
     "title": "Fairytale",
     "artist": "Stray Kids",
-    "album": "CIRCUS - EP",
+    "album": "CIRCUS",
     "file": "audio/Fairytale.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f4/fc/a7/f4fca7c1-3be5-a50f-6d87-25e744818971/4547366570342.jpg/600x600bb.jpg"
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 89,
     "title": "Falling Up -English version-",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "GIANT",
     "file": "audio/Falling Up -English version-.mp3",
-    "cover": ""
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 90,
     "title": "Falling Up",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "GIANT",
     "file": "audio/Falling Up.mp3",
-    "cover": ""
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 91,
     "title": "For You",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2021",
     "file": "audio/For You.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 92,
@@ -733,15 +733,15 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/GET LIT.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 93,
     "title": "GIANT (Korean Ver.)",
     "artist": "Stray Kids",
-    "album": "GIANT",
+    "album": "Mixtape : dominATE",
     "file": "audio/GIANT (Korean Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape___dominATE.jpg"
   },
   {
     "id": 94,
@@ -749,15 +749,15 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/GIANT.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 95,
     "title": "GLOW",
     "artist": "Stray Kids",
-    "album": "Mixtape : Time Out - Single",
+    "album": "Mixtape",
     "file": "audio/GLOW.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3c/4f/67/3c4f671b-1b52-ce05-b618-a3d8054ff3c8/738676859928_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape.jpg"
   },
   {
     "id": 96,
@@ -765,7 +765,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/GO LIVE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 97,
@@ -773,15 +773,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Get Cool.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 98,
     "title": "Ghost",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "KARMA",
     "file": "audio/Ghost.mp3",
-    "cover": ""
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 99,
@@ -789,15 +789,15 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/Give Me Your TMI.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 100,
     "title": "God's Menu (Japanese version)",
     "artist": "Stray Kids",
-    "album": "GO LIVE",
+    "album": "ALL IN",
     "file": "audio/God's Menu (Japanese version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 101,
@@ -805,7 +805,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/God’s Menu.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 102,
@@ -813,31 +813,31 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Gone Away (HAN, Seungmin, I.N).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 103,
     "title": "Goodbye",
-    "artist": "Stray Kids",
+    "artist": "SEUNGMIN",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Goodbye.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 104,
     "title": "Grow Up",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/Grow Up.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 105,
     "title": "HALLUCINATION (I.N)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/HALLUCINATION (I.N).mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 106,
@@ -845,7 +845,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/HaPpY (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 107,
@@ -853,7 +853,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/Half Time.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 108,
@@ -861,7 +861,7 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/Hall of Fame.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 109,
@@ -869,23 +869,23 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Haven.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 110,
     "title": "Hellevator",
     "artist": "Stray Kids",
-    "album": "Mixtape : OH - Single",
+    "album": "SKZ2020",
     "file": "audio/Hellevator.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/df/74/29/df742996-843d-101e-fe9b-483ea1376a70/738676858266_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 111,
     "title": "Hero's Soup",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "I am YOU",
     "file": "audio/Hero's Soup.mp3",
-    "cover": ""
+    "cover": "covers/I_am_YOU.jpg"
   },
   {
     "id": 112,
@@ -893,23 +893,23 @@
     "artist": "Stray Kids",
     "album": "HOP",
     "file": "audio/Hold my hand (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 113,
     "title": "Holiday",
     "artist": "Stray Kids",
-    "album": "DO IT - EP",
+    "album": "DO IT",
     "file": "audio/Holiday.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/33/69/7233691c-aefe-252d-678b-faa9b3455200/8809928958965_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/DO_IT.jpg"
   },
   {
     "id": 114,
     "title": "Hollow",
     "artist": "Stray Kids",
-    "album": "Hollow - EP",
+    "album": "Hollow",
     "file": "audio/Hollow.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/52/b1/c252b1ef-863a-ec99-98a2-74d98b9731f6/4547366755893.jpg/600x600bb.jpg"
+    "cover": "covers/Hollow.jpg"
   },
   {
     "id": 115,
@@ -917,23 +917,23 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Hoodie Season.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 116,
     "title": "Hug Me (I.N)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Hug Me (I.N).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 117,
     "title": "Hug Me (Live)",
-    "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "artist": "I.N",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Hug Me (Live).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 118,
@@ -941,7 +941,7 @@
     "artist": "Stray Kids",
     "album": "THIS & THAT",
     "file": "audio/I Do.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/05/aa/c005aa79-a3a7-6e28-48e2-4c5e72eff603/8809928957357_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 119,
@@ -949,7 +949,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/I GOT IT (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 120,
@@ -957,15 +957,15 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/I Like It.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 121,
     "title": "I am YOU",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/I am YOU.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 122,
@@ -973,7 +973,7 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/ITEM.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 123,
@@ -981,7 +981,7 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/In My Head.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 124,
@@ -989,15 +989,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Insomnia.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 125,
     "title": "Into The Current",
-    "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "artist": "SEUNGMIN",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Into The Current.mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 126,
@@ -1005,7 +1005,7 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/JJAM.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 127,
@@ -1013,7 +1013,7 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/LALALALA (Rock Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 128,
@@ -1021,15 +1021,15 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/LALALALA.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 129,
     "title": "LOVER",
-    "artist": "Stray Kids",
+    "artist": "Hyunjin",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/LOVER.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 130,
@@ -1037,7 +1037,7 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/Leave.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 131,
@@ -1045,7 +1045,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Levanter.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 132,
@@ -1053,15 +1053,15 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Limbo (Lee Know).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 133,
     "title": "Limbo (Live)",
-    "artist": "Stray Kids",
+    "artist": "LEE KNOW",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Limbo (Live).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 134,
@@ -1069,7 +1069,7 @@
     "artist": "Stray Kids",
     "album": "ODDINARY",
     "file": "audio/Lonely St.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 135,
@@ -1077,15 +1077,15 @@
     "artist": "Stray Kids",
     "album": "THE SOUND",
     "file": "audio/Lost Me.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e7/1b/5b/e71b5b60-4df8-5b1f-ec11-f30e1f177220/4547366611182.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 136,
     "title": "Love Untold (Hyunjin)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Love Untold (Hyunjin).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 137,
@@ -1093,15 +1093,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/M.I.A.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 138,
     "title": "MANIAC -Japanese version-",
     "artist": "Stray Kids",
-    "album": "ODDINARY",
+    "album": "CIRCUS",
     "file": "audio/MANIAC -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 139,
@@ -1109,7 +1109,7 @@
     "artist": "Stray Kids",
     "album": "ODDINARY",
     "file": "audio/MANIAC.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 140,
@@ -1117,7 +1117,7 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/MEGAVERSE.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 141,
@@ -1125,23 +1125,23 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/MESS.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 142,
     "title": "MIC&BRUSH",
-    "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "artist": "Hyunjin",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/MIC&BRUSH.mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 143,
     "title": "MIROH",
     "artist": "Stray Kids",
-    "album": "Clé 1 : MIROH",
+    "album": "SKZ2020",
     "file": "audio/MIROH.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b1/fc/c1/b1fcc187-2298-a18b-ee68-06b23c0eefa6/192641939365_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 144,
@@ -1149,7 +1149,7 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/MOUNTAINS.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 145,
@@ -1157,7 +1157,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Maknae On Top (I.N).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 146,
@@ -1165,7 +1165,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Maze of Memories.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 147,
@@ -1173,7 +1173,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Mirror.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 148,
@@ -1181,7 +1181,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Mixtape _ Gone Days.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 149,
@@ -1189,7 +1189,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Mixtape _ OH.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 150,
@@ -1197,15 +1197,15 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Mixtape _ On Track.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 151,
     "title": "Mixtape : Time Out",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "5-STAR",
     "file": "audio/Mixtape _ Time Out.mp3",
-    "cover": ""
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 152,
@@ -1213,7 +1213,7 @@
     "artist": "Stray Kids",
     "album": "Clé 2 : Yellow Wood",
     "file": "audio/Mixtape#1.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/56/98/2b5698c2-decb-5922-7c01-173db876982a/192641939389_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__2___Yellow_Wood.jpg"
   },
   {
     "id": 153,
@@ -1221,7 +1221,7 @@
     "artist": "Stray Kids",
     "album": "Clé 2 : Yellow Wood",
     "file": "audio/Mixtape#2.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/56/98/2b5698c2-decb-5922-7c01-173db876982a/192641939389_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__2___Yellow_Wood.jpg"
   },
   {
     "id": 154,
@@ -1229,7 +1229,7 @@
     "artist": "Stray Kids",
     "album": "Clé 2 : Yellow Wood",
     "file": "audio/Mixtape#3.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/56/98/2b5698c2-decb-5922-7c01-173db876982a/192641939389_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__2___Yellow_Wood.jpg"
   },
   {
     "id": 155,
@@ -1237,31 +1237,31 @@
     "artist": "Stray Kids",
     "album": "Clé 2 : Yellow Wood",
     "file": "audio/Mixtape#4.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/56/98/2b5698c2-decb-5922-7c01-173db876982a/192641939389_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__2___Yellow_Wood.jpg"
   },
   {
     "id": 156,
     "title": "Muddy Water (Changbin, Hyunjin, HAN, Felix)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "ODDINARY",
     "file": "audio/Muddy Water (Changbin, Hyunjin, HAN, Felix).mp3",
-    "cover": ""
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 157,
     "title": "My Name",
-    "artist": "Stray Kids",
+    "artist": "CHANGBIN",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/My Name.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 158,
     "title": "My Pace",
     "artist": "Stray Kids",
-    "album": "I am YOU",
+    "album": "SKZ2020",
     "file": "audio/My Pace.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/00/ed/a6/00eda672-576a-a929-c948-bda3d590a887/192641939358_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 159,
@@ -1269,15 +1269,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/My Side.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 160,
     "title": "My Universe (Seungmin, I.N)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "IN LIFE",
     "file": "audio/My Universe (Seungmin, I.N).mp3",
-    "cover": ""
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 161,
@@ -1285,7 +1285,7 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/NIGHT -English version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 162,
@@ -1293,7 +1293,7 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/NIGHT.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 163,
@@ -1301,23 +1301,23 @@
     "artist": "Stray Kids",
     "album": "I am NOT",
     "file": "audio/NOT!.mp3",
-    "cover": ""
+    "cover": "covers/I_am_NOT.jpg"
   },
   {
     "id": 164,
     "title": "N/S",
     "artist": "Stray Kids",
-    "album": "ATE",
+    "album": "SKZ2021",
     "file": "audio/N_S.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 165,
     "title": "Never Alone",
     "artist": "Stray Kids",
-    "album": "Hollow - EP",
+    "album": "Hollow",
     "file": "audio/Never Alone.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/52/b1/c252b1ef-863a-ec99-98a2-74d98b9731f6/4547366755893.jpg/600x600bb.jpg"
+    "cover": "covers/Hollow.jpg"
   },
   {
     "id": 166,
@@ -1325,7 +1325,7 @@
     "artist": "Stray Kids",
     "album": "THE SOUND",
     "file": "audio/Novel.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e7/1b/5b/e71b5b60-4df8-5b1f-ec11-f30e1f177220/4547366611182.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 167,
@@ -1333,15 +1333,15 @@
     "artist": "Stray Kids",
     "album": "ALL IN",
     "file": "audio/One Day.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/2d/e5/c52de52f-a24f-642f-ab4c-5f247e9f616b/4547366478358.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 168,
     "title": "PERFUME",
-    "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "artist": "SEUNGMIN",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/PERFUME.mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 169,
@@ -1349,15 +1349,15 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Pacemaker.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 170,
     "title": "Parade",
     "artist": "Stray Kids",
-    "album": "Hollow - EP",
+    "album": "Hollow",
     "file": "audio/Parade.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/52/b1/c252b1ef-863a-ec99-98a2-74d98b9731f6/4547366755893.jpg/600x600bb.jpg"
+    "cover": "covers/Hollow.jpg"
   },
   {
     "id": 171,
@@ -1365,7 +1365,7 @@
     "artist": "Stray Kids",
     "album": "GO LIVE",
     "file": "audio/Phobia.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/51/d8/58/51d858b1-94df-2047-d2b4-0378ca0cd9db/192641939440_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 172,
@@ -1373,23 +1373,23 @@
     "artist": "Stray Kids",
     "album": "KARMA",
     "file": "audio/Phoenix.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/22/ee/3822ee8e-c8f6-bb12-10ca-dcfd27dd166b/8809928955230_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/KARMA.jpg"
   },
   {
     "id": 173,
     "title": "Photobook",
     "artist": "Stray Kids",
-    "album": "DO IT - EP",
+    "album": "DO IT",
     "file": "audio/Photobook.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/33/69/7233691c-aefe-252d-678b-faa9b3455200/8809928958965_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/DO_IT.jpg"
   },
   {
     "id": 174,
     "title": "Piece of a Puzzle (Changbin, Seungmin)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Piece of a Puzzle (Changbin, Seungmin).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 175,
@@ -1397,23 +1397,23 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Placebo.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 176,
     "title": "Question",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ2020",
     "file": "audio/Question.mp3",
-    "cover": ""
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 177,
     "title": "REV IT UP",
-    "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "artist": "Felix",
+    "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/REV IT UP.mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 178,
@@ -1421,23 +1421,23 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/ROCK.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 179,
     "title": "RUN (HAN)",
     "artist": "Stray Kids",
-    "album": "ATE",
+    "album": "SKZ-REPLAY",
     "file": "audio/RUN (HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 180,
     "title": "RUN IT",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THIS & THAT",
     "file": "audio/RUN IT.mp3",
-    "cover": ""
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 181,
@@ -1445,15 +1445,15 @@
     "artist": "Stray Kids",
     "album": "HOP",
     "file": "audio/Railway (Bang Chan).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 182,
     "title": "Raining stars",
-    "artist": "Stray Kids",
+    "artist": "HAN",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Raining stars.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 183,
@@ -1461,7 +1461,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Red Lights (Bang Chan, Hyunjin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 184,
@@ -1469,15 +1469,15 @@
     "artist": "Stray Kids",
     "album": "Clé 2 : Yellow Wood",
     "file": "audio/Road Not Taken.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/56/98/2b5698c2-decb-5922-7c01-173db876982a/192641939389_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl__2___Yellow_Wood.jpg"
   },
   {
     "id": 185,
     "title": "Roman Empire",
-    "artist": "Stray Kids",
+    "artist": "Bang Chan",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Roman Empire.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 186,
@@ -1485,7 +1485,7 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/Runners.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 187,
@@ -1493,23 +1493,23 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/S-Class.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 188,
     "title": "SLUMP (Japanese version)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "ALL IN",
     "file": "audio/SLUMP (Japanese version).mp3",
-    "cover": ""
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 189,
     "title": "SLUMP (\"Tower of God\" ED)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "GO LIVE",
     "file": "audio/SLUMP (_Tower of God_ ED).mp3",
-    "cover": ""
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 190,
@@ -1517,7 +1517,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/SSICK.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 191,
@@ -1525,7 +1525,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/STAY.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 192,
@@ -1533,15 +1533,15 @@
     "artist": "Stray Kids",
     "album": "Clé : LEVANTER",
     "file": "audio/STOP.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/59/5b/c6/595bc697-c42f-7f17-a09d-9e0c6e87063e/738676860856_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Cl____LEVANTER.jpg"
   },
   {
     "id": 193,
     "title": "SUPER BOARD",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "MAXIDENT",
     "file": "audio/SUPER BOARD.mp3",
-    "cover": ""
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 194,
@@ -1549,7 +1549,7 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/Saiyan.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 195,
@@ -1557,7 +1557,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2021",
     "file": "audio/Scars (Korean Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/00/ed/99/00ed99f0-3489-4026-fe09-6022875700d9/738676858518_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2021.jpg"
   },
   {
     "id": 196,
@@ -1565,15 +1565,15 @@
     "artist": "Stray Kids",
     "album": "THE SOUND",
     "file": "audio/Scars.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e7/1b/5b/e71b5b60-4df8-5b1f-ec11-f30e1f177220/4547366611182.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 197,
     "title": "School Life",
     "artist": "Stray Kids",
-    "album": "Mixtape : Time Out - Single",
+    "album": "Mixtape",
     "file": "audio/School Life.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3c/4f/67/3c4f671b-1b52-ce05-b618-a3d8054ff3c8/738676859928_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Mixtape.jpg"
   },
   {
     "id": 198,
@@ -1581,7 +1581,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Secret Secret.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 199,
@@ -1589,15 +1589,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Side Effects.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 200,
     "title": "Silent Cry -Japanese version-",
     "artist": "Stray Kids",
-    "album": "CIRCUS - EP",
+    "album": "CIRCUS",
     "file": "audio/Silent Cry -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f4/fc/a7/f4fca7c1-3be5-a50f-6d87-25e744818971/4547366570342.jpg/600x600bb.jpg"
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 201,
@@ -1605,7 +1605,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Silent Cry.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 202,
@@ -1613,7 +1613,7 @@
     "artist": "Stray Kids",
     "album": "HOP",
     "file": "audio/So Good (Hyunjin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/e2/83/b3e28373-7aad-03c0-b8ec-9b1d9e706989/8809928953014_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 203,
@@ -1621,7 +1621,7 @@
     "artist": "Stray Kids",
     "album": "ROCK-STAR",
     "file": "audio/Social Path (Feat. LiSA) (Korean Ver.).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/cc/6d/36cc6d5f-1be5-188e-ce54-80f57b023791/8809928950532_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ROCK-STAR.jpg"
   },
   {
     "id": 204,
@@ -1629,23 +1629,23 @@
     "artist": "Stray Kids",
     "album": "Social Path / Super Bowl -Japanese version-",
     "file": "audio/Social Path (Instrumental).mp3",
-    "cover": ""
+    "cover": "covers/Social_Path___Super_Bowl_-Japanese_version-.jpg"
   },
   {
     "id": 205,
     "title": "Social Path",
     "artist": "Stray Kids",
-    "album": "Social Path / Super Bowl -Japanese ver.- - EP",
+    "album": "Social Path / Super Bowl -Japanese version-",
     "file": "audio/Social Path.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cf/58/de/cf58de1b-69a0-cf63-d31d-dec0091ec546/4547366643275.jpg/600x600bb.jpg"
+    "cover": "covers/Social_Path___Super_Bowl_-Japanese_version-.jpg"
   },
   {
     "id": 206,
     "title": "Sorry, I Love You",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "NOEASY",
     "file": "audio/Sorry, I Love You.mp3",
-    "cover": ""
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 207,
@@ -1653,7 +1653,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Spread My Wings.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 208,
@@ -1661,7 +1661,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Star Lost.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 209,
@@ -1669,15 +1669,15 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Stars and Raindrops (Seungmin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 210,
     "title": "Still here",
-    "artist": "Stray Kids",
+    "artist": "SEUNGMIN",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/Still here.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 211,
@@ -1685,7 +1685,7 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/Stray Kids.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   },
   {
     "id": 212,
@@ -1693,47 +1693,47 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/Streetlight (Changbin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 213,
     "title": "Sunshine",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Clé : LEVANTER",
     "file": "audio/Sunshine.mp3",
-    "cover": ""
+    "cover": "covers/Cl____LEVANTER.jpg"
   },
   {
     "id": 214,
     "title": "Super Bowl -Japanese version-",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Social Path / Super Bowl -Japanese version-",
     "file": "audio/Super Bowl -Japanese version-.mp3",
-    "cover": ""
+    "cover": "covers/Social_Path___Super_Bowl_-Japanese_version-.jpg"
   },
   {
     "id": 215,
     "title": "Super Bowl",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "5-STAR",
     "file": "audio/Super Bowl.mp3",
-    "cover": ""
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 216,
     "title": "Surfin’ (Lee Know, Changbin, Felix)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "NOEASY",
     "file": "audio/Surfin’ (Lee Know, Changbin, Felix).mp3",
-    "cover": ""
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 217,
     "title": "TA",
     "artist": "Stray Kids",
-    "album": "ATE",
+    "album": "GO LIVE",
     "file": "audio/TA.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 218,
@@ -1741,23 +1741,23 @@
     "artist": "Stray Kids",
     "album": "MAXIDENT",
     "file": "audio/TASTE (Lee Know, Hyunjin, Felix).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/MAXIDENT.jpg"
   },
   {
     "id": 219,
     "title": "THE SOUND (Korean Ver.)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "5-STAR",
     "file": "audio/THE SOUND (Korean Ver.).mp3",
-    "cover": ""
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 220,
     "title": "THE SOUND",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THE SOUND",
     "file": "audio/THE SOUND.mp3",
-    "cover": ""
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 221,
@@ -1765,23 +1765,23 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/TMT.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 222,
     "title": "TOP (Japanese version)",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "ALL IN",
     "file": "audio/TOP (Japanese version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ALL_IN.jpg"
   },
   {
     "id": 223,
     "title": "TOP (\"Tower of God\" OP)",
     "artist": "Stray Kids",
-    "album": "5-STAR",
+    "album": "GO LIVE",
     "file": "audio/TOP (_Tower of God_ OP).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/GO_LIVE.jpg"
   },
   {
     "id": 224,
@@ -1789,15 +1789,15 @@
     "artist": "Stray Kids",
     "album": "5-STAR",
     "file": "audio/TOPLINE (Feat. Tiger JK).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5a/3b/1e/5a3b1e2f-1b70-a4b0-6d4d-a33a770f361f/738676860696_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 225,
     "title": "The Little Things",
-    "artist": "Stray Kids",
+    "artist": "I.N",
     "album": "SKZ-REPLAY 2026 Pt.1",
     "file": "audio/The Little Things.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/70/ea/2270ea94-60f0-94a6-bce2-99fafaa8a057/8809928957340_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY_2026_Pt_1.jpg"
   },
   {
     "id": 226,
@@ -1805,7 +1805,7 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/The Tortoise and the Hare.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 227,
@@ -1813,7 +1813,7 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/The View.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 228,
@@ -1821,7 +1821,7 @@
     "artist": "Stray Kids",
     "album": "THE SOUND",
     "file": "audio/There.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e7/1b/5b/e71b5b60-4df8-5b1f-ec11-f30e1f177220/4547366611182.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 229,
@@ -1829,7 +1829,7 @@
     "artist": "Stray Kids",
     "album": "This & That (This Remixes)",
     "file": "audio/This & That (Chill Version).mp3",
-    "cover": ""
+    "cover": "covers/This___That__This_Remixes.jpg"
   },
   {
     "id": 230,
@@ -1837,7 +1837,7 @@
     "artist": "Stray Kids",
     "album": "This & That (That Remixes)",
     "file": "audio/This & That (Cool Version).mp3",
-    "cover": ""
+    "cover": "covers/This___That__That_Remixes.jpg"
   },
   {
     "id": 231,
@@ -1845,7 +1845,7 @@
     "artist": "Stray Kids",
     "album": "THIS & THAT",
     "file": "audio/This & That (Festival Version).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/05/aa/c005aa79-a3a7-6e28-48e2-4c5e72eff603/8809928957357_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 232,
@@ -1853,7 +1853,7 @@
     "artist": "Stray Kids",
     "album": "This & That (This Remixes)",
     "file": "audio/This & That (Instrumental).mp3",
-    "cover": ""
+    "cover": "covers/This___That__This_Remixes.jpg"
   },
   {
     "id": 233,
@@ -1861,7 +1861,7 @@
     "artist": "Stray Kids",
     "album": "This & That (That Remixes)",
     "file": "audio/This & That (That Version).mp3",
-    "cover": ""
+    "cover": "covers/This___That__That_Remixes.jpg"
   },
   {
     "id": 234,
@@ -1869,7 +1869,7 @@
     "artist": "Stray Kids",
     "album": "This & That (This Remixes)",
     "file": "audio/This & That (This Version).mp3",
-    "cover": ""
+    "cover": "covers/This___That__This_Remixes.jpg"
   },
   {
     "id": 235,
@@ -1877,15 +1877,15 @@
     "artist": "Stray Kids",
     "album": "THIS & THAT",
     "file": "audio/This & That.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/05/aa/c005aa79-a3a7-6e28-48e2-4c5e72eff603/8809928957357_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 236,
     "title": "Thunderous -Japanese version-",
     "artist": "Stray Kids",
-    "album": "NOEASY",
+    "album": "THE SOUND",
     "file": "audio/Thunderous -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/THE_SOUND.jpg"
   },
   {
     "id": 237,
@@ -1893,55 +1893,55 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/Thunderous.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 238,
     "title": "Truman (HAN & Felix)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Mixtape : dominATE",
     "file": "audio/Truman (HAN & Felix).mp3",
-    "cover": ""
+    "cover": "covers/Mixtape___dominATE.jpg"
   },
   {
     "id": 239,
     "title": "U (Feat. TABLO)",
     "artist": "Stray Kids",
-    "album": "ATE",
+    "album": "HOP",
     "file": "audio/U (Feat. TABLO).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 240,
     "title": "ULTRA (Changbin)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/ULTRA (Changbin).mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 241,
     "title": "Unfair (Felix)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/Unfair (Felix).mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 242,
     "title": "Up All Night (Bang Chan, Changbin, Felix, Seungmin)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Up All Night (Bang Chan, Changbin, Felix, Seungmin).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 243,
     "title": "VENOM -Japanese version-",
     "artist": "Stray Kids",
-    "album": "ODDINARY",
+    "album": "CIRCUS",
     "file": "audio/VENOM -Japanese version-.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 244,
@@ -1949,7 +1949,7 @@
     "artist": "Stray Kids",
     "album": "ODDINARY",
     "file": "audio/VENOM.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/5f/6d/545f6deb-89de-9f08-4ad0-b8d4136a0911/192641947902_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 245,
@@ -1957,7 +1957,7 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Victory Song.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 246,
@@ -1965,15 +1965,15 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/Voices.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 247,
     "title": "WHO?",
     "artist": "Stray Kids",
-    "album": "I am YOU",
+    "album": "I am WHO",
     "file": "audio/WHO_.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/00/ed/a6/00eda672-576a-a929-c948-bda3d590a887/192641939358_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/I_am_WHO.jpg"
   },
   {
     "id": 248,
@@ -1981,7 +1981,7 @@
     "artist": "Stray Kids",
     "album": "GIANT",
     "file": "audio/WHY_.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/c7/d7/fcc7d70e-ef18-1586-3269-d9881acbea9e/4547366717150.jpg/600x600bb.jpg"
+    "cover": "covers/GIANT.jpg"
   },
   {
     "id": 249,
@@ -1989,39 +1989,39 @@
     "artist": "Stray Kids",
     "album": "NOEASY",
     "file": "audio/WOLFGANG.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/af/dc/2b/afdc2b64-deb3-cf5f-84e2-c43be4105636/192641939495_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/NOEASY.jpg"
   },
   {
     "id": 250,
     "title": "Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "ODDINARY",
     "file": "audio/Waiting For Us (Bang Chan, Lee Know, Seungmin, I.N).mp3",
-    "cover": ""
+    "cover": "covers/ODDINARY.jpg"
   },
   {
     "id": 251,
     "title": "Walkin On Water (HIP Ver.)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/Walkin On Water (HIP Ver.).mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 252,
     "title": "Walkin On Water",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/Walkin On Water.mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 253,
     "title": "Way Out",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "THIS & THAT",
     "file": "audio/Way Out.mp3",
-    "cover": ""
+    "cover": "covers/THIS___THAT.jpg"
   },
   {
     "id": 254,
@@ -2029,23 +2029,23 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/We Go (Bang Chan, Changbin, HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 255,
     "title": "Winter Falls",
     "artist": "Stray Kids",
-    "album": "Christmas EveL - EP",
+    "album": "Christmas EveL",
     "file": "audio/Winter Falls.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ba/1b/d9/ba1bd944-0e53-81b0-cd04-d4735b49e5f5/192641939525_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/Christmas_EveL.jpg"
   },
   {
     "id": 256,
     "title": "Wish You Back (HAN)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/Wish You Back (HAN).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 257,
@@ -2053,7 +2053,7 @@
     "artist": "Stray Kids",
     "album": "IN LIFE",
     "file": "audio/Wow (Lee Know, Hyunjin, Felix).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a8/99/a9/a899a9bb-bddc-1ce6-61d0-bea282420aa3/192641939464_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/IN_LIFE.jpg"
   },
   {
     "id": 258,
@@ -2061,47 +2061,47 @@
     "artist": "Stray Kids",
     "album": "SKZ2020",
     "file": "audio/YAYAYA.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3e/65/d4/3e65d433-9e11-67e9-3eb9-910fa1ef4471/738676857511_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ2020.jpg"
   },
   {
     "id": 259,
     "title": "YOU.",
     "artist": "Stray Kids",
-    "album": "MAXIDENT",
+    "album": "I am YOU",
     "file": "audio/YOU.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b9/bc/58/b9bc58ce-2d5e-74a5-c1da-9c8e596a6625/738676860030_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/I_am_YOU.jpg"
   },
   {
     "id": 260,
     "title": "You Can STAY",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Clé : LEVANTER",
     "file": "audio/You Can STAY.mp3",
-    "cover": ""
+    "cover": "covers/Cl____LEVANTER.jpg"
   },
   {
     "id": 261,
     "title": "Your Eyes",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "CIRCUS",
     "file": "audio/Your Eyes.mp3",
-    "cover": ""
+    "cover": "covers/CIRCUS.jpg"
   },
   {
     "id": 262,
     "title": "Youth (Lee Know)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "HOP",
     "file": "audio/Youth (Lee Know).mp3",
-    "cover": ""
+    "cover": "covers/HOP.jpg"
   },
   {
     "id": 263,
     "title": "Youtiful",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "5-STAR",
     "file": "audio/Youtiful.mp3",
-    "cover": ""
+    "cover": "covers/5-STAR.jpg"
   },
   {
     "id": 264,
@@ -2109,7 +2109,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/ZONE (Bang Chan, Changbin, HAN).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 265,
@@ -2117,7 +2117,7 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/i hate to admit (Bang Chan).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 266,
@@ -2125,23 +2125,23 @@
     "artist": "Stray Kids",
     "album": "SKZ-REPLAY",
     "file": "audio/ice.cream (Hyunjin).mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b8/74/c0/b874c02b-4014-56cd-8a6c-ba456bd7cba7/738676860429_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 267,
     "title": "just a little",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "Hollow",
     "file": "audio/just a little.mp3",
-    "cover": ""
+    "cover": "covers/Hollow.jpg"
   },
   {
     "id": 268,
     "title": "miss you (Hyunjin)",
     "artist": "Stray Kids",
-    "album": "SKZHOP HIPTAPE HOP Stray Kids",
+    "album": "SKZ-REPLAY",
     "file": "audio/miss you (Hyunjin).mp3",
-    "cover": ""
+    "cover": "covers/SKZ-REPLAY.jpg"
   },
   {
     "id": 269,
@@ -2149,6 +2149,6 @@
     "artist": "Stray Kids",
     "album": "ATE",
     "file": "audio/twilight.mp3",
-    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/c1/47/24c147fc-cf70-0a4e-3e21-bd9a42617572/8809928952123_Cover.jpg/600x600bb.jpg"
+    "cover": "covers/ATE.jpg"
   }
 ]

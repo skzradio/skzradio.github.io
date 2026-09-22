@@ -1,5 +1,5 @@
 // SKZ Radio - Service Worker con actualización automática en segundo plano (Network-First)
-const CACHE_NAME = 'skz-radio-cache-v1.0.3';
+const CACHE_NAME = 'skz-radio-cache-v1.0.5';
 const CORE_ASSETS = [
   './',
   './index.html',
