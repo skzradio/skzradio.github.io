@@ -1404,17 +1404,80 @@
       "miss you (hyunjin)": "SKZ-REPLAY"
     };
 
+    // Álbumes oficiales adicionales y canciones de ATE, ROCK-STAR y GIANT
+    const EXTRA_ALBUMS = {
+      "mountains": "ATE",
+      "jjam": "ATE",
+      "i like it": "ATE",
+      "runners": "ATE",
+      "twilight": "ATE",
+      "stray kids": "ATE",
+      "chk chk boom": "ATE",
+      "chk chk boom festival ver": "ATE",
+      "chk chk boom festival version": "ATE",
+      "megaverse": "ROCK-STAR",
+      "lalalala": "ROCK-STAR",
+      "blind spot": "ROCK-STAR",
+      "comflex": "ROCK-STAR",
+      "cover me": "ROCK-STAR",
+      "leave": "ROCK-STAR",
+      "social path": "ROCK-STAR",
+      "social path korean ver": "ROCK-STAR",
+      "lalalala rock ver": "ROCK-STAR",
+      "butterflies": "Social Path / Super Bowl",
+      "fairytale": "CIRCUS",
+      "your eyes": "CIRCUS",
+      "circus": "CIRCUS",
+      "24 to 25": "Christmas EveL",
+      "winter falls": "Christmas EveL",
+      "christmas evel": "Christmas EveL",
+      "give me your tmi": "MAXIDENT",
+      "super board": "MAXIDENT",
+      "3racha": "MAXIDENT",
+      "taste": "MAXIDENT",
+      "can t stop": "MAXIDENT",
+      "cant stop": "MAXIDENT",
+      "circus korean ver": "MAXIDENT"
+    };
+    Object.assign(ALBUM_MAP, EXTRA_ALBUMS);
+
+    function normalizeTitleKey(str) {
+      return (str || '')
+        .toLowerCase()
+        .replace(/[#_\(\)\-\.:,'’"\/\[\]]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function resolveOfficialAlbum(track) {
+      if (!track) return 'Stray Kids';
+      const rawTitle = track.title || '';
+      const cleanKey = normalizeTitleKey(rawTitle);
+
+      if (ALBUM_MAP[cleanKey]) return ALBUM_MAP[cleanKey];
+
+      // Búsqueda sin paréntesis (ej. "Alien (HAN)" -> "Alien")
+      const stripped = normalizeTitleKey(rawTitle.replace(/\(.*?\)/g, '').replace(/\[.*?\]/g, ''));
+      if (ALBUM_MAP[stripped]) return ALBUM_MAP[stripped];
+
+      // Búsqueda por coincidencia de prefijo
+      for (const [key, album] of Object.entries(ALBUM_MAP)) {
+        if (cleanKey.startsWith(key) || key.startsWith(cleanKey)) {
+          return album;
+        }
+      }
+
+      if (track.album && track.album !== "SKZ Collection" && track.album.trim().length > 0) {
+        return track.album.trim();
+      }
+
+      return 'Stray Kids';
+    }
+
     function enrichTracksWithAlbums(list) {
       if (!Array.isArray(list)) return list;
       return list.map(t => {
-        if (!t.album || t.album === "SKZ Collection") {
-          const key = (t.title || "").toLowerCase().trim();
-          const cleanKey = key.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-          const found = ALBUM_MAP[key] || ALBUM_MAP[cleanKey];
-          if (found) {
-            t.album = found;
-          }
-        }
+        t.album = resolveOfficialAlbum(t);
         return t;
       });
     }
@@ -1427,7 +1490,6 @@
     let isDragging = false;
     let playbackDeck = [];
     const coverCache = {};
-    const albumCache = {};
     const albumCoverCache = {};
 
     const audio = document.getElementById("audioSource");
@@ -1654,7 +1716,7 @@
 
       if (!isBlobOrAbout) {
         try {
-          const res = await fetch('canciones.json');
+          const res = await fetch('canciones.json?t=' + Date.now());
           if (res.ok) {
             const data = await res.json();
             if (Array.isArray(data) && data.length > 0) {
@@ -1667,7 +1729,7 @@
 
       if (!loaded && isBlobOrAbout) {
         try {
-          const res = await fetch('https://castleradio.github.io/repro/canciones.json');
+          const res = await fetch('https://castleradio.github.io/repro/canciones.json?t=' + Date.now());
           if (res.ok) {
             const data = await res.json();
             if (Array.isArray(data) && data.length > 0) {
@@ -1711,54 +1773,49 @@
     }
 
     async function fetchOfficialCover(songTitle, albumName) {
-      const cleanTitle = songTitle.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-      const cleanAlbum = (albumName || '').replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-      
-      if (coverCache[cleanTitle]) {
-        coverImg.src = coverCache[cleanTitle];
+      const targetAlbum = (albumName && albumName !== 'Stray Kids') ? albumName : resolveOfficialAlbum({ title: songTitle });
+      const albumKey = targetAlbum.toLowerCase().trim();
+
+      // 1. Revisar si ya tenemos en caché la portada de este álbum
+      if (albumCoverCache[albumKey]) {
+        coverImg.src = albumCoverCache[albumKey];
         return;
       }
-      if (cleanAlbum && albumCoverCache[cleanAlbum.toLowerCase()]) {
-        coverImg.src = albumCoverCache[cleanAlbum.toLowerCase()];
-      }
+
+      // Término de búsqueda optimizado para el álbum oficial
+      let queryTerm = targetAlbum;
+      if (queryTerm === "HOP") queryTerm = "SKZHOP HIPTAPE";
+      else if (queryTerm === "GO LIVE") queryTerm = "GO生";
+      else if (queryTerm === "IN LIFE") queryTerm = "IN生";
+      else if (queryTerm === "ROCK-STAR") queryTerm = "樂-STAR";
 
       try {
-        const query = encodeURIComponent(`Stray Kids ${cleanTitle}`);
-        const res = await fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=8`);
+        const query = encodeURIComponent(`Stray Kids ${queryTerm}`);
+        const res = await fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=album&limit=6`);
         const data = await res.json();
         
-        let match = (data.results || []).find(r => 
-          (r.artistName || "").toLowerCase().includes("stray kids") &&
-          (r.trackName || "").toLowerCase().includes(cleanTitle.toLowerCase())
-        );
+        // Coincidencia estricta con álbumes oficiales de Stray Kids
+        let match = (data.results || []).find(r => {
+          const art = (r.artistName || "").toLowerCase();
+          const col = (r.collectionName || "").toLowerCase();
+          const isSkz = art.includes("stray kids");
+          const matchesCol = col.includes(albumKey) || col.includes(queryTerm.toLowerCase()) || albumKey.includes(col);
+          return isSkz && matchesCol;
+        });
 
         if (!match) {
           match = (data.results || []).find(r => (r.artistName || "").toLowerCase().includes("stray kids"));
         }
 
-        if (!match && cleanAlbum && cleanAlbum !== 'SKZ Collection') {
-          const albumQuery = encodeURIComponent(`Stray Kids ${cleanAlbum}`);
-          const aRes = await fetch(`https://itunes.apple.com/search?term=${albumQuery}&media=music&entity=album&limit=4`);
-          const aData = await aRes.json();
-          match = (aData.results || []).find(r => (r.artistName || "").toLowerCase().includes("stray kids"));
-        }
-
         if (match && match.artworkUrl100) {
           const hiresCover = match.artworkUrl100.replace('100x100bb', '600x600bb');
-          coverCache[cleanTitle] = hiresCover;
-          if (cleanAlbum) albumCoverCache[cleanAlbum.toLowerCase()] = hiresCover;
+          albumCoverCache[albumKey] = hiresCover;
           coverImg.src = hiresCover;
-
-          if (match.collectionName && (match.artistName || "").toLowerCase().includes("stray kids")) {
-            albumCache[cleanTitle] = match.collectionName;
-          }
-        } else if (!cleanAlbum || !albumCoverCache[cleanAlbum.toLowerCase()]) {
+        } else {
           coverImg.src = DEFAULT_SVG_COVER;
         }
       } catch (_) {
-        if (!cleanAlbum || !albumCoverCache[cleanAlbum.toLowerCase()]) {
-          coverImg.src = DEFAULT_SVG_COVER;
-        }
+        coverImg.src = DEFAULT_SVG_COVER;
       }
     }
 
@@ -1779,9 +1836,9 @@
 
       updateTitleMarquee(track.title);
 
-      const cleanTitle = track.title.replace(/[#_\(\)]/g, ' ').replace(/\s+/g, ' ').trim();
-      const currentAlbum = ALBUM_MAP[cleanTitle.toLowerCase()] || track.album || albumCache[cleanTitle] || 'Stray Kids';
-      trackArtist.textContent = `${currentAlbum} • ${track.artist || 'Stray Kids'}`;
+      const officialAlbum = resolveOfficialAlbum(track);
+      track.album = officialAlbum;
+      trackArtist.textContent = `${officialAlbum} • Stray Kids`;
 
       if (isFromQueue) {
         modeIndicator.textContent = "⚡ PETICIÓN PRIORITARIA";
@@ -1791,7 +1848,7 @@
         modeIndicator.style.color = "var(--accent-cyan)";
       }
 
-      fetchOfficialCover(track.title, currentAlbum);
+      fetchOfficialCover(track.title, officialAlbum);
 
       audio.play().then(() => {
         setPlaying(true);
@@ -2115,7 +2172,9 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(err => {
+        navigator.serviceWorker.register('./sw.js').then((reg) => {
+          reg.update();
+        }).catch(err => {
           console.warn('Registro de Service Worker omitido:', err);
         });
       });

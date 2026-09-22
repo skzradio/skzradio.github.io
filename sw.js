@@ -1,5 +1,5 @@
-// SKZ Radio - Service Worker para habilitar instalación PWA
-const CACHE_NAME = 'skz-radio-cache-v1';
+// SKZ Radio - Service Worker con actualización automática en segundo plano (Network-First)
+const CACHE_NAME = 'skz-radio-cache-v1.0.2';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -8,10 +8,9 @@ const CORE_ASSETS = [
 ];
 
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(CORE_ASSETS);
-    }).then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS))
   );
 });
 
@@ -26,14 +25,26 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Las canciones y peticiones dinámicas se procesan directamente por red
-  if (event.request.url.includes('/audio/') || event.request.url.includes('itunes.apple.com')) {
+  const url = event.request.url;
+  // Audios, peticiones externas y el catálogo dinámico van siempre directo por red
+  if (
+    url.includes('/audio/') ||
+    url.includes('itunes.apple.com') ||
+    url.includes('canciones.json')
+  ) {
     return;
   }
 
+  // Estrategia Network-First con fallback a caché: busca siempre la versión más reciente en la red
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request);
-    })
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
+        }
+        return networkResponse;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
