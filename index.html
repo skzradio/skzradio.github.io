@@ -1451,6 +1451,11 @@
 
     function resolveOfficialAlbum(track) {
       if (!track) return 'Stray Kids';
+      // Prioridad 1: Si canciones.json ya tiene el álbum oficial extraído, respetarlo
+      if (track.album && track.album !== "SKZ Collection" && track.album.trim().length > 0) {
+        return track.album.trim();
+      }
+
       const rawTitle = track.title || '';
       const cleanKey = normalizeTitleKey(rawTitle);
 
@@ -1465,10 +1470,6 @@
         if (cleanKey.startsWith(key) || key.startsWith(cleanKey)) {
           return album;
         }
-      }
-
-      if (track.album && track.album !== "SKZ Collection" && track.album.trim().length > 0) {
-        return track.album.trim();
       }
 
       return 'Stray Kids';
@@ -1848,7 +1849,12 @@
         modeIndicator.style.color = "var(--accent-cyan)";
       }
 
-      fetchOfficialCover(track.title, officialAlbum);
+      // Si el JSON ya trae la portada oficial directa, usarla inmediatamente
+      if (track.cover && track.cover.startsWith('http')) {
+        coverImg.src = track.cover;
+      } else {
+        fetchOfficialCover(track.title, officialAlbum);
+      }
 
       audio.play().then(() => {
         setPlaying(true);
